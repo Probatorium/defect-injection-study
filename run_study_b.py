@@ -199,17 +199,45 @@ def main():
     return 0
 
 
+#: The manuscript whose text the `manuscript_occurrences` column counts against.
+#: LaTeX here, markdown for subject A: the column means the same thing in both.
+MANUSCRIPT = "paper.tex"
+
+
+def manuscript_occurrences(target):
+    """How many times a mutant's target string occurs in the subject's manuscript.
+
+    This is the variable that explains subject B's G1 breach, and until it was
+    published a reader could check the rates but not re-derive the
+    cross-tabulation that accounts for them. See the same function in
+    `run_study.py`; the definition is identical.
+    """
+    text = manuscript_occurrences.cache
+    if text is None:
+        with io.open(os.path.join(oracles_b.SUBJECT, MANUSCRIPT), encoding="utf-8") as fh:
+            text = fh.read()
+        manuscript_occurrences.cache = text
+    return text.count(target)
+
+
+manuscript_occurrences.cache = None
+
+
 def write_raw(rows):
     if not os.path.isdir(RESULTS):
         os.makedirs(RESULTS)
     out = ["\t".join(("mutant_id", "class", "path", "line", "oracle_a", "oracle_b",
-                      "oracle_c", "checks_killed", "killed_ids"))]
+                      "oracle_c", "checks_killed",
+                      "target_string", "manuscript_occurrences", "killed_ids"))]
     for row in sorted(rows, key=lambda r: r["mutant"]["id"]):
         mutant = row["mutant"]
+        target = mutant["old"].replace("\t", " ").replace("\n", "\\n")
         out.append("\t".join((
             mutant["id"], mutant["cls"], mutant["path"], str(mutant["line"]),
             "1" if row["a"] else "0", "1" if row["b"] else "0",
-            "1" if row["c"] else "0", str(len(row["dead"])), " ~ ".join(row["dead"]))))
+            "1" if row["c"] else "0", str(len(row["dead"])),
+            target, str(manuscript_occurrences(mutant["old"])),
+            " ~ ".join(row["dead"]))))
     with io.open(os.path.join(RESULTS, "raw_results_b.tsv"), "w",
                  encoding="utf-8", newline="\n") as handle:
         handle.write("\n".join(out) + "\n")
