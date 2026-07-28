@@ -12,10 +12,14 @@ import subprocess
 import sys
 import tempfile
 
+import subject as subject_module
 import taxonomy
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SUBJECT = os.path.normpath(os.path.join(HERE, taxonomy.SUBJECT))
+#: Resolved once per process. Worker processes are spawned rather than forked,
+#: so they re-import this module and read the same environment variable the
+#: parent exported.
+SUBJECT = subject_module.resolve()
 FIGURE = os.path.join("figures", "digit_frequencies.svg")
 
 #: Never copied into a sandbox.

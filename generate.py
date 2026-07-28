@@ -20,10 +20,11 @@ import random
 import re
 import sys
 
+import subject as subject_module
 import taxonomy
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SUBJECT = os.path.normpath(os.path.join(HERE, taxonomy.SUBJECT))
+SUBJECT = subject_module.resolve()
 sys.path.insert(0, SUBJECT)
 
 from src import forbidden_phrases as fp          # noqa: E402
