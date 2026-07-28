@@ -1,0 +1,364 @@
+mutant_id	class	path	line	oracle_a	oracle_b	oracle_c	checks_killed	killed_ids
+constant_copied_to_prose#000	constant_copied_to_prose	paper.md	27	0	0	0	0	
+constant_copied_to_prose#001	constant_copied_to_prose	paper.md	27	0	0	0	0	
+constant_copied_to_prose#002	constant_copied_to_prose	paper.md	27	0	0	0	0	
+constant_copied_to_prose#003	constant_copied_to_prose	paper.md	27	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#004	constant_copied_to_prose	paper.md	27	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#005	constant_copied_to_prose	paper.md	27	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#006	constant_copied_to_prose	paper.md	49	0	0	0	0	
+constant_copied_to_prose#007	constant_copied_to_prose	paper.md	49	0	0	0	0	
+constant_copied_to_prose#008	constant_copied_to_prose	paper.md	49	0	0	0	0	
+constant_copied_to_prose#009	constant_copied_to_prose	paper.md	49	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#010	constant_copied_to_prose	paper.md	49	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#011	constant_copied_to_prose	paper.md	49	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#012	constant_copied_to_prose	paper.md	69	0	0	0	0	
+constant_copied_to_prose#013	constant_copied_to_prose	paper.md	69	0	0	0	0	
+constant_copied_to_prose#014	constant_copied_to_prose	paper.md	69	0	0	0	0	
+constant_copied_to_prose#015	constant_copied_to_prose	paper.md	69	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#016	constant_copied_to_prose	paper.md	69	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#017	constant_copied_to_prose	paper.md	69	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#018	constant_copied_to_prose	paper.md	102	0	0	0	0	
+constant_copied_to_prose#019	constant_copied_to_prose	paper.md	102	0	0	0	0	
+constant_copied_to_prose#020	constant_copied_to_prose	paper.md	102	0	0	0	0	
+constant_copied_to_prose#021	constant_copied_to_prose	paper.md	102	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#022	constant_copied_to_prose	paper.md	102	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#023	constant_copied_to_prose	paper.md	102	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#024	constant_copied_to_prose	paper.md	118	0	0	0	0	
+constant_copied_to_prose#025	constant_copied_to_prose	paper.md	118	0	0	0	0	
+constant_copied_to_prose#026	constant_copied_to_prose	paper.md	118	0	0	0	0	
+constant_copied_to_prose#027	constant_copied_to_prose	paper.md	118	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#028	constant_copied_to_prose	paper.md	118	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#029	constant_copied_to_prose	paper.md	118	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#030	constant_copied_to_prose	paper.md	163	0	0	0	0	
+constant_copied_to_prose#031	constant_copied_to_prose	paper.md	163	0	0	0	0	
+constant_copied_to_prose#032	constant_copied_to_prose	paper.md	163	0	0	0	0	
+constant_copied_to_prose#033	constant_copied_to_prose	paper.md	163	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#034	constant_copied_to_prose	paper.md	163	1	0	0	1	COV-orphan-numbers
+constant_copied_to_prose#035	constant_copied_to_prose	paper.md	163	1	0	0	1	COV-orphan-numbers
+data_corrupted#000	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	11	CIT-agrees-a,DUAL-chi_square,DUAL-count_7,DUAL-count_8,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_7,FRZ-count_8,FRZ-p_value
+data_corrupted#001	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_8,DUAL-count_9,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_8,FRZ-count_9,FRZ-p_value
+data_corrupted#002	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	18	DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-digits,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-matches-data,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-largest_count,FRZ-p_value,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z
+data_corrupted#003	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_4,DUAL-count_5,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_4,FRZ-count_5,FRZ-p_value
+data_corrupted#004	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	6	DUAL-count_2,DUAL-count_3,DUAL-digits,FIG-matches-data,FRZ-count_2,FRZ-count_3
+data_corrupted#005	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	6	DUAL-count_2,DUAL-count_3,DUAL-digits,FIG-matches-data,FRZ-count_2,FRZ-count_3
+data_corrupted#006	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	6	DUAL-count_2,DUAL-count_3,DUAL-digits,FIG-matches-data,FRZ-count_2,FRZ-count_3
+data_corrupted#007	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_4,DUAL-count_5,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_4,FRZ-count_5,FRZ-p_value
+data_corrupted#008	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_4,DUAL-count_5,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_4,FRZ-count_5,FRZ-p_value
+data_corrupted#009	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_7,DUAL-count_8,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_7,FRZ-count_8,FRZ-p_value
+data_corrupted#010	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_7,DUAL-count_8,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_7,FRZ-count_8,FRZ-p_value
+data_corrupted#011	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_3,DUAL-count_4,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_3,FRZ-count_4,FRZ-p_value
+data_corrupted#012	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_3,DUAL-count_4,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_3,FRZ-count_4,FRZ-p_value
+data_corrupted#013	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_8,DUAL-count_9,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_8,FRZ-count_9,FRZ-p_value
+data_corrupted#014	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_3,DUAL-count_4,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_3,FRZ-count_4,FRZ-p_value
+data_corrupted#015	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_6,DUAL-count_7,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_6,FRZ-count_7,FRZ-p_value
+data_corrupted#016	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_6,DUAL-count_7,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_6,FRZ-count_7,FRZ-p_value
+data_corrupted#017	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_5,DUAL-count_6,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_5,FRZ-count_6,FRZ-p_value
+data_corrupted#018	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_0,DUAL-count_9,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_0,FRZ-count_9,FRZ-p_value
+data_corrupted#019	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_4,DUAL-count_5,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_4,FRZ-count_5,FRZ-p_value
+data_corrupted#020	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_0,DUAL-count_9,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_0,FRZ-count_9,FRZ-p_value
+data_corrupted#021	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	18	DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-digits,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-matches-data,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-largest_count,FRZ-p_value,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z
+data_corrupted#022	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_5,DUAL-count_6,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_5,FRZ-count_6,FRZ-p_value
+data_corrupted#023	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_8,DUAL-count_9,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_8,FRZ-count_9,FRZ-p_value
+data_corrupted#024	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_5,DUAL-count_6,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_5,FRZ-count_6,FRZ-p_value
+data_corrupted#025	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_3,DUAL-count_4,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_3,FRZ-count_4,FRZ-p_value
+data_corrupted#026	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_8,DUAL-count_9,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_8,FRZ-count_9,FRZ-p_value
+data_corrupted#027	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	6	DUAL-count_2,DUAL-count_3,DUAL-digits,FIG-matches-data,FRZ-count_2,FRZ-count_3
+data_corrupted#028	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	DUAL-chi_square,DUAL-count_6,DUAL-count_7,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_6,FRZ-count_7,FRZ-p_value
+data_corrupted#029	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	18	DUAL-chi_square,DUAL-count_1,DUAL-count_2,DUAL-digits,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-matches-data,FRZ-chi_square,FRZ-count_1,FRZ-count_2,FRZ-largest_count,FRZ-p_value,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z
+data_truncated#000	data_truncated	src/data_path_a_spigot.py	38	1	0	1	91	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib,FM-author-README.md,FM-author-paper.md,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib,FM-title-README.md,FM-title-paper.md,FM-year-CITATION.bib,FM-year-README.md,FM-year-paper.md,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-a,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
+data_truncated#001	data_truncated	src/data_path_a_spigot.py	38	1	0	1	91	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib,FM-author-README.md,FM-author-paper.md,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib,FM-title-README.md,FM-title-paper.md,FM-year-CITATION.bib,FM-year-README.md,FM-year-paper.md,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-a,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
+data_truncated#002	data_truncated	src/data_path_b_machin.py	38	1	0	0	91	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib,FM-author-README.md,FM-author-paper.md,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib,FM-title-README.md,FM-title-paper.md,FM-year-CITATION.bib,FM-year-README.md,FM-year-paper.md,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-b,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
+data_truncated#003	data_truncated	src/data_path_b_machin.py	38	1	0	0	91	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib,FM-author-README.md,FM-author-paper.md,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib,FM-title-README.md,FM-title-paper.md,FM-year-CITATION.bib,FM-year-README.md,FM-year-paper.md,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-b,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
+derivation_written_by_hand#000	derivation_written_by_hand	src/stats_path_a_series.py	43	1	0	0	1	SPLIT-no-hardcoded-results
+derivation_written_by_hand#001	derivation_written_by_hand	src/stats_path_b_exact.py	50	0	0	0	0	
+derivation_written_by_hand#002	derivation_written_by_hand	src/stats_path_a_series.py	66	1	0	0	1	SPLIT-no-hardcoded-results
+derivation_written_by_hand#003	derivation_written_by_hand	src/stats_path_b_exact.py	68	1	0	0	1	SPLIT-no-hardcoded-results
+derivation_written_by_hand#004	derivation_written_by_hand	src/stats_path_a_series.py	81	1	0	0	1	SPLIT-no-hardcoded-results
+derivation_written_by_hand#005	derivation_written_by_hand	src/stats_path_a_series.py	91	1	0	0	1	SPLIT-no-hardcoded-results
+derivation_written_by_hand#006	derivation_written_by_hand	src/frozen_claims.py	174	0	0	0	0	
+derivation_written_by_hand#007	derivation_written_by_hand	src/frozen_claims.py	173	0	0	0	0	
+derivation_written_by_hand#008	derivation_written_by_hand	src/stats_path_a_series.py	33	1	0	0	1	SPLIT-no-hardcoded-results
+derivation_written_by_hand#009	derivation_written_by_hand	src/stats_path_b_exact.py	35	1	0	0	1	SPLIT-no-hardcoded-results
+figure_gone_stale#000	figure_gone_stale	figures/digit_frequencies.svg	5	1	0	1	1	FIG-matches-data
+figure_gone_stale#001	figure_gone_stale	figures/digit_frequencies.svg	7	1	0	1	1	FIG-matches-data
+figure_gone_stale#002	figure_gone_stale	figures/digit_frequencies.svg	9	1	0	1	1	FIG-matches-data
+figure_gone_stale#003	figure_gone_stale	figures/digit_frequencies.svg	11	1	0	1	1	FIG-matches-data
+figure_gone_stale#004	figure_gone_stale	figures/digit_frequencies.svg	13	1	0	1	1	FIG-matches-data
+figure_gone_stale#005	figure_gone_stale	figures/digit_frequencies.svg	15	1	0	1	1	FIG-matches-data
+figure_gone_stale#006	figure_gone_stale	figures/digit_frequencies.svg	17	1	0	1	1	FIG-matches-data
+figure_gone_stale#007	figure_gone_stale	figures/digit_frequencies.svg	18	1	0	1	1	FIG-matches-data
+figure_gone_stale#008	figure_gone_stale	figures/digit_frequencies.svg	20	1	0	1	2	FIG-labels-counts,FIG-matches-data
+figure_gone_stale#009	figure_gone_stale	figures/digit_frequencies.svg	21	1	0	1	1	FIG-matches-data
+figure_gone_stale#010	figure_gone_stale	figures/digit_frequencies.svg	23	1	0	1	1	FIG-matches-data
+figure_gone_stale#011	figure_gone_stale	figures/digit_frequencies.svg	24	1	0	1	1	FIG-matches-data
+figure_gone_stale#012	figure_gone_stale	figures/digit_frequencies.svg	26	1	0	1	2	FIG-labels-counts,FIG-matches-data
+figure_gone_stale#013	figure_gone_stale	figures/digit_frequencies.svg	27	1	0	1	1	FIG-matches-data
+figure_gone_stale#014	figure_gone_stale	figures/digit_frequencies.svg	29	1	0	1	1	FIG-matches-data
+figure_gone_stale#015	figure_gone_stale	figures/digit_frequencies.svg	30	1	0	1	1	FIG-matches-data
+figure_gone_stale#016	figure_gone_stale	figures/digit_frequencies.svg	32	1	0	1	2	FIG-labels-counts,FIG-matches-data
+figure_gone_stale#017	figure_gone_stale	figures/digit_frequencies.svg	33	1	0	1	1	FIG-matches-data
+figure_gone_stale#018	figure_gone_stale	figures/digit_frequencies.svg	35	1	0	1	2	FIG-labels-counts,FIG-matches-data
+figure_gone_stale#019	figure_gone_stale	figures/digit_frequencies.svg	36	1	0	1	1	FIG-matches-data
+figure_gone_stale#020	figure_gone_stale	figures/digit_frequencies.svg	38	1	0	1	1	FIG-matches-data
+figure_gone_stale#021	figure_gone_stale	figures/digit_frequencies.svg	39	1	0	1	1	FIG-matches-data
+figure_gone_stale#022	figure_gone_stale	figures/digit_frequencies.svg	41	1	0	1	1	FIG-matches-data
+figure_gone_stale#023	figure_gone_stale	figures/digit_frequencies.svg	42	1	0	1	1	FIG-matches-data
+figure_gone_stale#024	figure_gone_stale	figures/digit_frequencies.svg	44	1	0	1	1	FIG-matches-data
+figure_gone_stale#025	figure_gone_stale	figures/digit_frequencies.svg	45	1	0	1	1	FIG-matches-data
+figure_gone_stale#026	figure_gone_stale	figures/digit_frequencies.svg	47	1	0	1	1	FIG-matches-data
+figure_governing_number#000	figure_governing_number	src/figure.py	13	1	0	1	1	FIG-matches-data
+figure_governing_number#001	figure_governing_number	src/figure.py	14	1	0	1	1	FIG-matches-data
+figure_governing_number#002	figure_governing_number	src/figure.py	15	1	0	1	1	FIG-matches-data
+figure_governing_number#003	figure_governing_number	src/figure.py	16	1	0	1	1	FIG-matches-data
+figure_governing_number#004	figure_governing_number	src/figure.py	17	1	0	1	1	FIG-matches-data
+figure_governing_number#005	figure_governing_number	src/figure.py	18	1	0	1	1	FIG-matches-data
+figure_governing_number#006	figure_governing_number	src/figure.py	22	1	0	1	1	FIG-matches-data
+figure_governing_number#007	figure_governing_number	src/figure.py	23	1	0	1	1	FIG-matches-data
+forbidden_phrase#000	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#001	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#002	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#003	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#004	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#005	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#006	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#007	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#008	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#009	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#010	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#011	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#012	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#013	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#014	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#015	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#016	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#017	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#018	forbidden_phrase	paper.md	172	1	0	0	1	PHR-paper.md
+forbidden_phrase#019	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#020	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#021	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#022	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#023	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#024	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#025	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#026	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#027	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#028	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#029	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#030	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#031	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#032	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#033	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#034	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#035	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#036	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#037	forbidden_phrase	README.md	196	1	0	0	1	PHR-README.md
+forbidden_phrase#038	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#039	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#040	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#041	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#042	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#043	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#044	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#045	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#046	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#047	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#048	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#049	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#050	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#051	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#052	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#053	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#054	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#055	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#056	forbidden_phrase	CITATION.bib	21	1	0	0	1	PHR-CITATION.bib
+forbidden_phrase#057	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#058	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#059	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#060	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#061	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#062	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#063	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#064	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#065	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#066	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#067	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#068	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#069	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#070	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#071	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#072	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#073	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#074	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#075	forbidden_phrase	references.bib	31	1	0	0	1	PHR-references.bib
+forbidden_phrase#076	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#077	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#078	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#079	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#080	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#081	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#082	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#083	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#084	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#085	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#086	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#087	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#088	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#089	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#090	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#091	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#092	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#093	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+forbidden_phrase#094	forbidden_phrase	mutation_report.md	140	1	0	0	1	PHR-mutation_report.md
+front_matter_drift#000	front_matter_drift	paper.md	2	0	0	0	0	
+front_matter_drift#001	front_matter_drift	paper.md	2	0	0	0	0	
+front_matter_drift#002	front_matter_drift	paper.md	8	0	0	0	0	
+front_matter_drift#003	front_matter_drift	paper.md	8	0	0	0	0	
+front_matter_drift#004	front_matter_drift	README.md	1	1	0	0	1	FM-title-README.md
+front_matter_drift#005	front_matter_drift	README.md	1	1	0	0	1	FM-title-README.md
+front_matter_drift#006	front_matter_drift	CITATION.bib	15	1	0	0	1	FM-title-CITATION.bib
+front_matter_drift#007	front_matter_drift	CITATION.bib	15	1	0	0	1	FM-title-CITATION.bib
+front_matter_drift#008	front_matter_drift	paper.md	3	0	0	0	0	
+front_matter_drift#009	front_matter_drift	paper.md	3	0	0	0	0	
+front_matter_drift#010	front_matter_drift	paper.md	10	0	0	0	0	
+front_matter_drift#011	front_matter_drift	paper.md	10	0	0	0	0	
+front_matter_drift#012	front_matter_drift	README.md	3	1	0	0	1	FM-author-README.md
+front_matter_drift#013	front_matter_drift	README.md	3	1	0	0	1	FM-author-README.md
+front_matter_drift#014	front_matter_drift	CITATION.bib	16	1	0	0	1	FM-author-CITATION.bib
+front_matter_drift#015	front_matter_drift	CITATION.bib	16	1	0	0	1	FM-author-CITATION.bib
+front_matter_drift#016	front_matter_drift	paper.md	4	1	0	0	1	FM-year-paper.md
+front_matter_drift#017	front_matter_drift	README.md	3	1	0	0	1	FM-year-README.md
+front_matter_drift#018	front_matter_drift	CITATION.bib	14	1	0	0	1	FM-citation-key
+front_matter_drift#019	front_matter_drift	CITATION.bib	17	0	0	0	0	
+frozen_value_edited#000	frozen_value_edited	src/frozen_claims.py	75	1	0	0	1	FRZ-n_digits_q
+frozen_value_edited#001	frozen_value_edited	src/frozen_claims.py	77	1	0	0	1	FRZ-n_categories_q
+frozen_value_edited#002	frozen_value_edited	src/frozen_claims.py	81	1	0	0	1	FRZ-n_digits_data
+frozen_value_edited#003	frozen_value_edited	src/frozen_claims.py	83	1	0	0	1	FRZ-n_reference_digits
+frozen_value_edited#004	frozen_value_edited	src/frozen_claims.py	87	1	0	0	1	FRZ-n_categories_null
+frozen_value_edited#005	frozen_value_edited	src/frozen_claims.py	89	1	0	0	1	FRZ-expected_count
+frozen_value_edited#006	frozen_value_edited	src/frozen_claims.py	91	1	0	0	1	FRZ-degrees_of_freedom
+frozen_value_edited#007	frozen_value_edited	src/frozen_claims.py	93	1	0	0	2	COV-orphan-numbers,FRZ-alpha
+frozen_value_edited#008	frozen_value_edited	src/frozen_claims.py	97	1	0	0	1	FRZ-count_0
+frozen_value_edited#009	frozen_value_edited	src/frozen_claims.py	98	1	0	0	2	FIG-labels-counts,FRZ-count_1
+frozen_value_edited#010	frozen_value_edited	src/frozen_claims.py	99	1	0	0	2	COV-orphan-numbers,FRZ-count_2
+frozen_value_edited#011	frozen_value_edited	src/frozen_claims.py	100	1	0	0	2	COV-orphan-numbers,FRZ-count_3
+frozen_value_edited#012	frozen_value_edited	src/frozen_claims.py	101	1	0	0	1	FRZ-count_4
+frozen_value_edited#013	frozen_value_edited	src/frozen_claims.py	102	1	0	0	2	COV-orphan-numbers,FRZ-count_5
+frozen_value_edited#014	frozen_value_edited	src/frozen_claims.py	103	1	0	0	2	COV-orphan-numbers,FRZ-count_6
+frozen_value_edited#015	frozen_value_edited	src/frozen_claims.py	104	1	0	0	3	COV-orphan-numbers,FIG-labels-counts,FRZ-count_7
+frozen_value_edited#016	frozen_value_edited	src/frozen_claims.py	105	1	0	0	2	COV-orphan-numbers,FRZ-count_8
+frozen_value_edited#017	frozen_value_edited	src/frozen_claims.py	106	1	0	0	3	COV-orphan-numbers,FIG-labels-counts,FRZ-count_9
+frozen_value_edited#018	frozen_value_edited	src/frozen_claims.py	107	1	0	0	2	COV-orphan-numbers,FRZ-chi_square
+frozen_value_edited#019	frozen_value_edited	src/frozen_claims.py	109	1	0	0	1	FRZ-degrees_of_freedom_result
+frozen_value_edited#020	frozen_value_edited	src/frozen_claims.py	111	1	0	0	2	COV-orphan-numbers,FRZ-p_value
+frozen_value_edited#021	frozen_value_edited	src/frozen_claims.py	113	1	0	0	1	FRZ-largest_count
+frozen_value_edited#022	frozen_value_edited	src/frozen_claims.py	115	1	0	0	2	COV-orphan-numbers,FRZ-post_hoc_z
+frozen_value_edited#023	frozen_value_edited	src/frozen_claims.py	117	1	0	0	2	COV-orphan-numbers,FRZ-post_hoc_p
+frozen_value_edited#024	frozen_value_edited	src/frozen_claims.py	119	1	0	0	1	FRZ-post_hoc_comparisons
+frozen_value_edited#025	frozen_value_edited	src/frozen_claims.py	121	1	0	0	2	COV-orphan-numbers,FRZ-post_hoc_p_adjusted
+frozen_value_edited#026	frozen_value_edited	src/frozen_claims.py	125	1	0	0	1	FRZ-n_digits_limits
+frozen_value_edited#027	frozen_value_edited	src/frozen_claims.py	129	1	0	0	3	COV-orphan-numbers,FRZ-n_checks,META-check-count
+frozen_value_edited#028	frozen_value_edited	src/frozen_claims.py	131	1	0	0	2	COV-orphan-numbers,FRZ-n_mutants
+frozen_value_edited#029	frozen_value_edited	src/frozen_claims.py	135	1	0	0	2	COV-orphan-numbers,FRZ-min_checks_killed
+frozen_value_edited#030	frozen_value_edited	src/frozen_claims.py	137	1	0	0	2	COV-orphan-numbers,FRZ-max_checks_killed
+manuscript_number_edited#000	manuscript_number_edited	paper.md	22	1	0	0	2	COV-orphan-numbers,FRZ-n_digits_q
+manuscript_number_edited#001	manuscript_number_edited	paper.md	23	1	0	0	2	COV-orphan-numbers,FRZ-n_categories_q
+manuscript_number_edited#002	manuscript_number_edited	paper.md	31	1	0	0	2	COV-orphan-numbers,FRZ-n_digits_data
+manuscript_number_edited#003	manuscript_number_edited	paper.md	40	1	0	0	1	FRZ-n_reference_digits
+manuscript_number_edited#004	manuscript_number_edited	paper.md	55	1	0	0	2	COV-orphan-numbers,FRZ-n_categories_null
+manuscript_number_edited#005	manuscript_number_edited	paper.md	56	0	0	0	0	
+manuscript_number_edited#006	manuscript_number_edited	paper.md	61	1	0	0	2	COV-orphan-numbers,FRZ-degrees_of_freedom
+manuscript_number_edited#007	manuscript_number_edited	paper.md	63	1	0	0	2	COV-orphan-numbers,FRZ-alpha
+manuscript_number_edited#008	manuscript_number_edited	paper.md	77	0	0	0	0	
+manuscript_number_edited#009	manuscript_number_edited	paper.md	78	1	0	0	1	COV-orphan-numbers
+manuscript_number_edited#010	manuscript_number_edited	paper.md	79	1	0	0	1	FRZ-count_2
+manuscript_number_edited#011	manuscript_number_edited	paper.md	80	1	0	0	1	FRZ-count_3
+manuscript_number_edited#012	manuscript_number_edited	paper.md	81	0	0	0	0	
+manuscript_number_edited#013	manuscript_number_edited	paper.md	82	1	0	0	2	COV-orphan-numbers,FRZ-count_5
+manuscript_number_edited#014	manuscript_number_edited	paper.md	83	1	0	0	1	FRZ-count_6
+manuscript_number_edited#015	manuscript_number_edited	paper.md	84	1	0	0	2	COV-orphan-numbers,FRZ-count_7
+manuscript_number_edited#016	manuscript_number_edited	paper.md	85	1	0	0	1	FRZ-count_8
+manuscript_number_edited#017	manuscript_number_edited	paper.md	86	1	0	0	2	COV-orphan-numbers,FRZ-count_9
+manuscript_number_edited#018	manuscript_number_edited	paper.md	92	1	0	0	2	COV-orphan-numbers,FRZ-chi_square
+manuscript_number_edited#019	manuscript_number_edited	paper.md	92	1	0	0	2	COV-orphan-numbers,FRZ-degrees_of_freedom_result
+manuscript_number_edited#020	manuscript_number_edited	paper.md	93	1	0	0	2	COV-orphan-numbers,FRZ-p_value
+manuscript_number_edited#021	manuscript_number_edited	paper.md	97	1	0	0	1	COV-orphan-numbers
+manuscript_number_edited#022	manuscript_number_edited	paper.md	98	1	0	0	2	COV-orphan-numbers,FRZ-post_hoc_z
+manuscript_number_edited#023	manuscript_number_edited	paper.md	99	1	0	0	2	COV-orphan-numbers,FRZ-post_hoc_p
+manuscript_number_edited#024	manuscript_number_edited	paper.md	101	1	0	0	2	COV-orphan-numbers,FRZ-post_hoc_comparisons
+manuscript_number_edited#025	manuscript_number_edited	paper.md	101	1	0	0	2	COV-orphan-numbers,FRZ-post_hoc_p_adjusted
+manuscript_number_edited#026	manuscript_number_edited	paper.md	113	1	0	0	2	COV-orphan-numbers,FRZ-n_digits_limits
+manuscript_number_edited#027	manuscript_number_edited	paper.md	127	1	0	0	2	COV-orphan-numbers,FRZ-n_checks
+manuscript_number_edited#028	manuscript_number_edited	paper.md	147	1	0	0	2	COV-orphan-numbers,FRZ-n_mutants
+manuscript_number_edited#029	manuscript_number_edited	paper.md	148	1	0	0	2	COV-orphan-numbers,FRZ-min_checks_killed
+manuscript_number_edited#030	manuscript_number_edited	paper.md	149	1	0	0	2	COV-orphan-numbers,FRZ-max_checks_killed
+nonnumeric_text_change#000	nonnumeric_text_change	src/cited_constants.py	22	0	0	0	0	
+nonnumeric_text_change#001	nonnumeric_text_change	src/data_path_a_spigot.py	18	0	0	0	0	
+nonnumeric_text_change#002	nonnumeric_text_change	src/data_path_b_machin.py	17	0	0	0	0	
+nonnumeric_text_change#003	nonnumeric_text_change	src/figure.py	20	0	0	0	0	
+nonnumeric_text_change#004	nonnumeric_text_change	src/forbidden_phrases.py	21	0	0	0	0	
+nonnumeric_text_change#005	nonnumeric_text_change	src/front_matter.py	12	0	0	0	0	
+nonnumeric_text_change#006	nonnumeric_text_change	src/frozen_claims.py	50	0	0	0	0	
+nonnumeric_text_change#007	nonnumeric_text_change	src/manuscript.py	12	0	0	0	0	
+nonnumeric_text_change#008	nonnumeric_text_change	src/stats_path_a_series.py	21	0	0	0	0	
+nonnumeric_text_change#009	nonnumeric_text_change	src/stats_path_b_exact.py	23	0	0	0	0	
+nonnumeric_text_change#010	nonnumeric_text_change	checks/check_10_structural_invariants.py	64	0	0	0	0	
+nonnumeric_text_change#011	nonnumeric_text_change	checks/check_20_cited_constants.py	26	0	0	0	0	
+nonnumeric_text_change#012	nonnumeric_text_change	checks/check_30_double_derivation.py	25	0	0	0	0	
+nonnumeric_text_change#013	nonnumeric_text_change	checks/check_55_computed_not_hardcoded.py	30	0	0	0	0	
+nonnumeric_text_change#014	nonnumeric_text_change	checks/check_80_front_matter.py	28	0	0	0	0	
+nonnumeric_text_change#015	nonnumeric_text_change	checks/check_90_claim_map.py	20	0	0	0	0	
+nonnumeric_text_change#016	nonnumeric_text_change	paper.md	31	0	0	0	0	
+nonnumeric_text_change#017	nonnumeric_text_change	README.md	25	0	0	0	0	
+nonnumeric_text_change#018	nonnumeric_text_change	README.md	176	0	0	0	0	
+permutation_no_statistical_effect#000	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	2	CIT-agrees-a,DUAL-digits
+permutation_no_statistical_effect#001	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	2	CIT-agrees-a,DUAL-digits
+permutation_no_statistical_effect#002	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	2	CIT-agrees-a,DUAL-digits
+permutation_no_statistical_effect#003	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#004	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#005	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#006	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#007	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#008	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#009	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#010	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#011	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#012	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#013	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#014	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#015	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#016	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#017	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#018	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+permutation_no_statistical_effect#019	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	1	DUAL-digits
+result_embedded_in_code#000	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#001	result_embedded_in_code	src/stats_path_a_series.py	22	0	0	0	0	
+result_embedded_in_code#002	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#003	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#004	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#005	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#006	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#007	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#008	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#009	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#010	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#011	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#012	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#013	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#014	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#015	result_embedded_in_code	src/stats_path_a_series.py	22	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#016	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#017	result_embedded_in_code	src/stats_path_b_exact.py	24	0	0	0	0	
+result_embedded_in_code#018	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#019	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#020	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#021	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#022	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#023	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#024	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#025	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#026	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#027	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#028	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#029	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#030	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
+result_embedded_in_code#031	result_embedded_in_code	src/stats_path_b_exact.py	24	1	0	0	1	SPLIT-no-hardcoded-results
