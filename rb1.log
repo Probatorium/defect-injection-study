@@ -1,0 +1,11 @@
+battery: 176 mutants, 5 configurations
+jobs: 885  (each verification takes about 18.6 s)
+  100/885  (452s)
+  200/885  (806s)
+  300/885  (1154s)
+  400/885  (1510s)
+  500/885  (1861s)
+  600/885  (2206s)
+  700/885  (2549s)
+  800/885  (2625s)
+elapsed: 2874 s
