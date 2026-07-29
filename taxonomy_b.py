@@ -16,7 +16,7 @@ SUBJECT = "../kingwen-orderings-replication"
 
 #: The commit subject B's numbers belong to. The study refuses to run against
 #: any other unless explicitly forced.
-DECLARED_COMMIT = "73d9a77cdc59ea1410ae815cbb484dc68eb752d1"
+DECLARED_COMMIT = "95437d30f805be447cccabb30ea54ff983741f52"
 
 #: Classes of `taxonomy.CLASSES` that do NOT apply to subject B, with the
 #: structural reason. Reproduced from the preregistration so that the exclusion
