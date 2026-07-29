@@ -5,21 +5,21 @@ nothing is entered by hand. The predictions this is measured against were
 committed in `PREREGISTRATION.md` before the battery was generated.
 
 ```
-SUBJECT_COMMIT_DECLARED: a3390860c53290271b6d06745fe252bfa7200dac
-SUBJECT_COMMIT_FOUND: a3390860c53290271b6d06745fe252bfa7200dac
+SUBJECT_COMMIT_DECLARED: e6e4250a18397976c5a266cb132707228fff5247
+SUBJECT_COMMIT_FOUND: e6e4250a18397976c5a266cb132707228fff5247
 SUBJECT_WORKTREE: clean
 SUBJECT_PINNED: yes
 SEED: 20260728
-MUTANTS: 365
+MUTANTS: 363
 CLASSES: 13
 CONFIGURATIONS: 9
 SAMPLE_DATA_CORRUPTED: 30
 SAMPLE_PERMUTATION: 20
 REJECTED_DUPLICATES: 0
 REJECTED_UNANCHORED: 0
-JOBS: 3660
+JOBS: 3640
 JOBS_ERRORED: 0
-JOBS_NOT_APPLICABLE: 7
+JOBS_NOT_APPLICABLE: 6
 ```
 
 `JOBS_NOT_APPLICABLE` counts (mutant, configuration) pairs in which the
@@ -41,13 +41,13 @@ modules.
 | `figure_gone_stale` | 27 | exhaustive |
 | `figure_governing_number` | 8 | exhaustive |
 | `forbidden_phrase` | 95 | exhaustive |
-| `front_matter_drift` | 21 | exhaustive |
+| `front_matter_drift` | 20 | exhaustive |
 | `frozen_value_edited` | 31 | exhaustive |
 | `manuscript_number_edited` | 31 | exhaustive |
-| `nonnumeric_text_change` | 20 | exhaustive |
+| `nonnumeric_text_change` | 19 | exhaustive |
 | `permutation_no_statistical_effect` | 20 | sampled |
 | `result_embedded_in_code` | 32 | exhaustive |
-| **total** | **365** | |
+| **total** | **363** | |
 
 ## 2 · Detection rate by class and oracle
 
@@ -57,20 +57,20 @@ Wilson score intervals at 95%. `n` is the number of mutants in the class.
 
 | Class | detected | n | rate | 95% Wilson |
 | --- | ---: | ---: | ---: | --- |
-| `constant_copied_to_prose` | 24 | 36 | 0.667 | 0.503 - 0.798 |
+| `constant_copied_to_prose` | 18 | 36 | 0.500 | 0.345 - 0.655 |
 | `data_corrupted` | 30 | 30 | 1.000 | 0.886 - 1.000 |
 | `data_truncated` | 4 | 4 | 1.000 | 0.510 - 1.000 |
 | `derivation_written_by_hand` | 7 | 10 | 0.700 | 0.397 - 0.892 |
 | `figure_gone_stale` | 27 | 27 | 1.000 | 0.875 - 1.000 |
 | `figure_governing_number` | 8 | 8 | 1.000 | 0.676 - 1.000 |
 | `forbidden_phrase` | 95 | 95 | 1.000 | 0.961 - 1.000 |
-| `front_matter_drift` | 20 | 21 | 0.952 | 0.773 - 0.992 |
+| `front_matter_drift` | 11 | 20 | 0.550 | 0.342 - 0.742 |
 | `frozen_value_edited` | 31 | 31 | 1.000 | 0.890 - 1.000 |
-| `manuscript_number_edited` | 31 | 31 | 1.000 | 0.890 - 1.000 |
-| `nonnumeric_text_change` | 0 | 20 | 0.000 | 0.000 - 0.161 |
+| `manuscript_number_edited` | 28 | 31 | 0.903 | 0.751 - 0.967 |
+| `nonnumeric_text_change` | 0 | 19 | 0.000 | 0.000 - 0.168 |
 | `permutation_no_statistical_effect` | 20 | 20 | 1.000 | 0.839 - 1.000 |
 | `result_embedded_in_code` | 30 | 32 | 0.938 | 0.799 - 0.983 |
-| **all classes pooled** | 327 | 365 | 0.896 | 0.860 - 0.923 |
+| **all classes pooled** | 309 | 363 | 0.851 | 0.811 - 0.884 |
 
 ### Oracle B · it builds
 
@@ -83,13 +83,13 @@ Wilson score intervals at 95%. `n` is the number of mutants in the class.
 | `figure_gone_stale` | 0 | 27 | 0.000 | 0.000 - 0.125 |
 | `figure_governing_number` | 0 | 8 | 0.000 | 0.000 - 0.324 |
 | `forbidden_phrase` | 0 | 95 | 0.000 | 0.000 - 0.039 |
-| `front_matter_drift` | 0 | 21 | 0.000 | 0.000 - 0.155 |
+| `front_matter_drift` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `frozen_value_edited` | 0 | 31 | 0.000 | 0.000 - 0.110 |
 | `manuscript_number_edited` | 0 | 31 | 0.000 | 0.000 - 0.110 |
-| `nonnumeric_text_change` | 0 | 20 | 0.000 | 0.000 - 0.161 |
+| `nonnumeric_text_change` | 0 | 19 | 0.000 | 0.000 - 0.168 |
 | `permutation_no_statistical_effect` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `result_embedded_in_code` | 0 | 32 | 0.000 | 0.000 - 0.107 |
-| **all classes pooled** | 0 | 365 | 0.000 | 0.000 - 0.010 |
+| **all classes pooled** | 0 | 363 | 0.000 | 0.000 - 0.010 |
 
 ### Oracle C · figures regenerate and match
 
@@ -102,13 +102,13 @@ Wilson score intervals at 95%. `n` is the number of mutants in the class.
 | `figure_gone_stale` | 27 | 27 | 1.000 | 0.875 - 1.000 |
 | `figure_governing_number` | 8 | 8 | 1.000 | 0.676 - 1.000 |
 | `forbidden_phrase` | 0 | 95 | 0.000 | 0.000 - 0.039 |
-| `front_matter_drift` | 0 | 21 | 0.000 | 0.000 - 0.155 |
+| `front_matter_drift` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `frozen_value_edited` | 0 | 31 | 0.000 | 0.000 - 0.110 |
 | `manuscript_number_edited` | 0 | 31 | 0.000 | 0.000 - 0.110 |
-| `nonnumeric_text_change` | 0 | 20 | 0.000 | 0.000 - 0.161 |
+| `nonnumeric_text_change` | 0 | 19 | 0.000 | 0.000 - 0.168 |
 | `permutation_no_statistical_effect` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `result_embedded_in_code` | 0 | 32 | 0.000 | 0.000 - 0.107 |
-| **all classes pooled** | 67 | 365 | 0.184 | 0.147 - 0.227 |
+| **all classes pooled** | 67 | 363 | 0.185 | 0.148 - 0.228 |
 
 ## 3 · Mechanism against class
 
@@ -118,17 +118,17 @@ columns, so rows do not sum to the class size.
 
 | Class | n | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| `constant_copied_to_prose` | 36 | 24 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `constant_copied_to_prose` | 36 | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `data_corrupted` | 30 | 30 | 0 | 30 | 0 | 0 | 0 | 1 | 0 | 0 |
 | `data_truncated` | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 | `derivation_written_by_hand` | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 0 | 0 |
 | `figure_gone_stale` | 27 | 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `figure_governing_number` | 8 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `forbidden_phrase` | 95 | 0 | 0 | 0 | 0 | 0 | 95 | 0 | 0 | 0 |
-| `front_matter_drift` | 21 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 | 0 |
+| `front_matter_drift` | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 0 |
 | `frozen_value_edited` | 31 | 31 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
-| `manuscript_number_edited` | 31 | 31 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `nonnumeric_text_change` | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `manuscript_number_edited` | 31 | 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `nonnumeric_text_change` | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `permutation_no_statistical_effect` | 20 | 0 | 0 | 20 | 0 | 0 | 0 | 3 | 0 | 0 |
 | `result_embedded_in_code` | 32 | 0 | 0 | 0 | 0 | 0 | 0 | 30 | 0 | 0 |
 
@@ -143,37 +143,37 @@ mechanism: its measured marginal contribution over this battery.
 
 | Mechanism | scored | detected without it | new escapes | share of scored |
 | --- | ---: | ---: | ---: | ---: |
-| 1 frozen claims | 364 | 206 | **121** | 0.332 |
-| 2 claim-to-check map | 364 | 327 | **0** | 0.000 |
-| 3 double derivation | 364 | 310 | **17** | 0.047 |
-| 4 mutation study | 365 | 327 | **0** | 0.000 |
-| 5 structural invariants | 364 | 327 | **0** | 0.000 |
-| 6 forbidden phrases | 365 | 232 | **95** | 0.260 |
-| 7 cited vs computed | 363 | 290 | **37** | 0.102 |
-| 8 front matter | 364 | 307 | **20** | 0.055 |
+| 1 frozen claims | 363 | 197 | **112** | 0.309 |
+| 2 claim-to-check map | 362 | 309 | **0** | 0.000 |
+| 3 double derivation | 362 | 292 | **17** | 0.047 |
+| 4 mutation study | 363 | 309 | **0** | 0.000 |
+| 5 structural invariants | 362 | 309 | **0** | 0.000 |
+| 6 forbidden phrases | 363 | 214 | **95** | 0.262 |
+| 7 cited vs computed | 361 | 272 | **37** | 0.102 |
+| 8 front matter | 362 | 298 | **11** | 0.030 |
 
 Classes contributing the new escapes, per mechanism:
 
-- **1 frozen claims**: `constant_copied_to_prose` 24, `figure_gone_stale` 27, `figure_governing_number` 8, `frozen_value_edited` 31, `manuscript_number_edited` 31
+- **1 frozen claims**: `constant_copied_to_prose` 18, `figure_gone_stale` 27, `figure_governing_number` 8, `frozen_value_edited` 31, `manuscript_number_edited` 28
 - **2 claim-to-check map**: none
 - **3 double derivation**: `permutation_no_statistical_effect` 17
 - **4 mutation study**: none
 - **5 structural invariants**: none
 - **6 forbidden phrases**: `forbidden_phrase` 95
 - **7 cited vs computed**: `derivation_written_by_hand` 7, `result_embedded_in_code` 30
-- **8 front matter**: `front_matter_drift` 20
+- **8 front matter**: `front_matter_drift` 11
 
 ## 5 · Escape rates, highest first
 
 | Class | escaped | n | escape rate | 95% Wilson |
 | --- | ---: | ---: | ---: | --- |
-| `nonnumeric_text_change` | 20 | 20 | 1.000 | 0.839 - 1.000 |
-| `constant_copied_to_prose` | 12 | 36 | 0.333 | 0.202 - 0.497 |
+| `nonnumeric_text_change` | 19 | 19 | 1.000 | 0.832 - 1.000 |
+| `constant_copied_to_prose` | 18 | 36 | 0.500 | 0.345 - 0.655 |
+| `front_matter_drift` | 9 | 20 | 0.450 | 0.258 - 0.658 |
 | `derivation_written_by_hand` | 3 | 10 | 0.300 | 0.108 - 0.603 |
+| `manuscript_number_edited` | 3 | 31 | 0.097 | 0.033 - 0.249 |
 | `result_embedded_in_code` | 2 | 32 | 0.062 | 0.017 - 0.201 |
-| `front_matter_drift` | 1 | 21 | 0.048 | 0.008 - 0.227 |
 | `permutation_no_statistical_effect` | 0 | 20 | 0.000 | 0.000 - 0.161 |
-| `manuscript_number_edited` | 0 | 31 | 0.000 | 0.000 - 0.110 |
 | `frozen_value_edited` | 0 | 31 | 0.000 | 0.000 - 0.110 |
 | `forbidden_phrase` | 0 | 95 | 0.000 | 0.000 - 0.039 |
 | `figure_governing_number` | 0 | 8 | 0.000 | 0.000 - 0.324 |
@@ -185,12 +185,12 @@ Classes contributing the new escapes, per mechanism:
 
 Evaluated mechanically against the thresholds fixed in `PREREGISTRATION.md`.
 
-- **F1** a class predicted detected escapes more than 0.10: **not met**
-- **harness** 0 of 3660 jobs errored; 7 were not applicable
-- **F2** a baseline reaches 0.90 of the full package: **not met** — oracle B 0/327 = 0.000, oracle C 67/327 = 0.205
+- **F1** a class predicted detected escapes more than 0.10: **MET** — front_matter_drift at 0.450
+- **harness** 0 of 3640 jobs errored; 6 were not applicable
+- **F2** a baseline reaches 0.90 of the full package: **not met** — oracle B 0/309 = 0.000, oracle C 67/309 = 0.217
 - **F3** a mechanism shows zero new escapes when ablated: **MET** — 2 claim-to-check map, 4 mutation study, 5 structural invariants
 - **F4** the negative control is detected above 0.05: **not met** — 0.000
-- **F5** fewer than four classes exceed 0.90 detection: **not met** — 10 classes do
+- **F5** fewer than four classes exceed 0.90 detection: **not met** — 9 classes do
 
 ## 7 · Per-mutant raw data
 

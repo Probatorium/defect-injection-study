@@ -176,6 +176,65 @@ there. Both files were restored from backups and regenerated after the fix.
 
 ---
 
+## Re-measurement of both subjects, after their repairs
+
+Nothing above is corrected, replaced or removed. Those numbers are the record of
+what the earlier apparatus caught, and a before-and-after table needs its before
+to stay where it is.
+
+### A-5 and A-6 · subject A at a339086 · **CURRENT for subject A**
+
+Seed 20260728, unchanged. Ablations unchanged. `DECLARED_COMMIT` moved in
+`37de4bf`, with its reason. Two full runs, 606 s and 607 s, byte-identical.
+
+```
+study_report.md   1a3b77fcfd27763c758ac5ffc92d2eacbca2562b5d0e94ac0be95e0ca180e33c
+raw_results.tsv   7b644b3899dd99c95400d5c2e1396cb1c2c931806ea6c0a767fdb814b0d6dbaa
+```
+
+327 of 365 detected, against 309 of 363 before. The battery grew by two, both
+for reasons recorded in `CONTRAST-REMEASUREMENT.md` section 6 and both reported
+before the run.
+
+### B-3 and B-4 · subject B at 95437d3 · **CURRENT for subject B**
+
+Seed 20260729, unchanged. Ablations unchanged, and deliberately not extended to
+the checks the repair added. `DECLARED_COMMIT` moved in `f7fc850`. The generator
+was repaired first in `c83102c` and produces a battery identical to the
+published one, class by class. Two full runs, 3219 s and 3482 s, byte-identical.
+
+```
+study_report_b.md   e47cfd5f4df07dff1cf424aa55827fc32a5654e7e723072f372be76007ff4837
+raw_results_b.tsv   aef2dac90e444f4618cc0e70571ae49f43d924ae05d4ccb0f26a4e37f6acfb3d
+comparison.md       d431bb489000294262400315a97dd5bd2f1403d428b131ffc44165f7bb3b0cad
+```
+
+123 of 176 detected, against 72 of 176 before.
+
+### Which hash belongs to which apparatus
+
+Two files carry the same name at four different hashes across this record. The
+table exists so that a hash quoted in any commit message stays resolvable.
+
+| File | Apparatus | Hash |
+| --- | --- | --- |
+| `raw_results.tsv` | A before, pre-columns | `8dce80ad4815…` |
+| `raw_results.tsv` | A before, with columns | `a30204f07570…` |
+| `raw_results.tsv` | **A after** | `7b644b3899dd…` |
+| `study_report.md` | A before, pre-pinning | `ee0b4c8f4b8e…` |
+| `study_report.md` | A before, pinned | `fed635dacf1a…` |
+| `study_report.md` | **A after** | `1a3b77fcfd27…` |
+| `raw_results_b.tsv` | B before, pre-columns | `c1e749616633…` |
+| `raw_results_b.tsv` | B before, with columns | `553fa55e2578…` |
+| `raw_results_b.tsv` | **B after** | `aef2dac90e44…` |
+| `study_report_b.md` | B before | `9e2672565435…` |
+| `study_report_b.md` | **B after** | `e47cfd5f4df0…` |
+| `comparison.md` | before | `42a8fc1e91d8…` |
+| `comparison.md` | **after** | `d431bb489000…` |
+
+The "before" files are kept in `results_before/` so that both halves of the
+table can be re-derived without checking out an earlier commit.
+
 ## What is not recorded here
 
 Wall-clock timings appear in this file but never inside the result files

@@ -1,19 +1,19 @@
 mutant_id	class	path	line	oracle_a	oracle_b	oracle_c	checks_killed	target_string	manuscript_occurrences	killed_ids
-constant_copied_to_prose#000	constant_copied_to_prose	paper.md	27	1	0	0	1	final section, which is the actual subject of the work.	1	FRZ-n_digits_q
+constant_copied_to_prose#000	constant_copied_to_prose	paper.md	27	0	0	0	0	final section, which is the actual subject of the work.	1	
 constant_copied_to_prose#001	constant_copied_to_prose	paper.md	27	0	0	0	0	final section, which is the actual subject of the work.	1	
 constant_copied_to_prose#002	constant_copied_to_prose	paper.md	27	0	0	0	0	final section, which is the actual subject of the work.	1	
 constant_copied_to_prose#003	constant_copied_to_prose	paper.md	27	1	0	0	1	final section, which is the actual subject of the work.	1	COV-orphan-numbers
 constant_copied_to_prose#004	constant_copied_to_prose	paper.md	27	1	0	0	1	final section, which is the actual subject of the work.	1	COV-orphan-numbers
 constant_copied_to_prose#005	constant_copied_to_prose	paper.md	27	1	0	0	1	final section, which is the actual subject of the work.	1	COV-orphan-numbers
-constant_copied_to_prose#006	constant_copied_to_prose	paper.md	49	1	0	0	1	from the algorithms named above.	1	FRZ-n_digits_data
-constant_copied_to_prose#007	constant_copied_to_prose	paper.md	49	1	0	0	1	from the algorithms named above.	1	FRZ-n_reference_digits
+constant_copied_to_prose#006	constant_copied_to_prose	paper.md	49	0	0	0	0	from the algorithms named above.	1	
+constant_copied_to_prose#007	constant_copied_to_prose	paper.md	49	0	0	0	0	from the algorithms named above.	1	
 constant_copied_to_prose#008	constant_copied_to_prose	paper.md	49	0	0	0	0	from the algorithms named above.	1	
 constant_copied_to_prose#009	constant_copied_to_prose	paper.md	49	1	0	0	1	from the algorithms named above.	1	COV-orphan-numbers
 constant_copied_to_prose#010	constant_copied_to_prose	paper.md	49	1	0	0	1	from the algorithms named above.	1	COV-orphan-numbers
 constant_copied_to_prose#011	constant_copied_to_prose	paper.md	49	1	0	0	1	from the algorithms named above.	1	COV-orphan-numbers
 constant_copied_to_prose#012	constant_copied_to_prose	paper.md	69	0	0	0	0	where the difference could matter.	1	
-constant_copied_to_prose#013	constant_copied_to_prose	paper.md	69	1	0	0	1	where the difference could matter.	1	FRZ-expected_count
-constant_copied_to_prose#014	constant_copied_to_prose	paper.md	69	1	0	0	1	where the difference could matter.	1	FRZ-alpha
+constant_copied_to_prose#013	constant_copied_to_prose	paper.md	69	0	0	0	0	where the difference could matter.	1	
+constant_copied_to_prose#014	constant_copied_to_prose	paper.md	69	0	0	0	0	where the difference could matter.	1	
 constant_copied_to_prose#015	constant_copied_to_prose	paper.md	69	1	0	0	1	where the difference could matter.	1	COV-orphan-numbers
 constant_copied_to_prose#016	constant_copied_to_prose	paper.md	69	1	0	0	1	where the difference could matter.	1	COV-orphan-numbers
 constant_copied_to_prose#017	constant_copied_to_prose	paper.md	69	1	0	0	1	where the difference could matter.	1	COV-orphan-numbers
@@ -23,18 +23,18 @@ constant_copied_to_prose#020	constant_copied_to_prose	paper.md	102	0	0	0	0	is no
 constant_copied_to_prose#021	constant_copied_to_prose	paper.md	102	1	0	0	1	is nothing here.	1	COV-orphan-numbers
 constant_copied_to_prose#022	constant_copied_to_prose	paper.md	102	1	0	0	1	is nothing here.	1	COV-orphan-numbers
 constant_copied_to_prose#023	constant_copied_to_prose	paper.md	102	1	0	0	1	is nothing here.	1	COV-orphan-numbers
-constant_copied_to_prose#024	constant_copied_to_prose	paper.md	118	1	0	0	1	computation can settle.	1	FRZ-n_digits_limits
+constant_copied_to_prose#024	constant_copied_to_prose	paper.md	118	0	0	0	0	computation can settle.	1	
 constant_copied_to_prose#025	constant_copied_to_prose	paper.md	118	0	0	0	0	computation can settle.	1	
 constant_copied_to_prose#026	constant_copied_to_prose	paper.md	118	0	0	0	0	computation can settle.	1	
 constant_copied_to_prose#027	constant_copied_to_prose	paper.md	118	1	0	0	1	computation can settle.	1	COV-orphan-numbers
 constant_copied_to_prose#028	constant_copied_to_prose	paper.md	118	1	0	0	1	computation can settle.	1	COV-orphan-numbers
 constant_copied_to_prose#029	constant_copied_to_prose	paper.md	118	1	0	0	1	computation can settle.	1	COV-orphan-numbers
-constant_copied_to_prose#030	constant_copied_to_prose	paper.md	167	0	0	0	0	contradicts the work until a person decides which of the two is wrong.	1	
-constant_copied_to_prose#031	constant_copied_to_prose	paper.md	167	0	0	0	0	contradicts the work until a person decides which of the two is wrong.	1	
-constant_copied_to_prose#032	constant_copied_to_prose	paper.md	167	0	0	0	0	contradicts the work until a person decides which of the two is wrong.	1	
-constant_copied_to_prose#033	constant_copied_to_prose	paper.md	167	1	0	0	1	contradicts the work until a person decides which of the two is wrong.	1	COV-orphan-numbers
-constant_copied_to_prose#034	constant_copied_to_prose	paper.md	167	1	0	0	1	contradicts the work until a person decides which of the two is wrong.	1	COV-orphan-numbers
-constant_copied_to_prose#035	constant_copied_to_prose	paper.md	167	1	0	0	1	contradicts the work until a person decides which of the two is wrong.	1	COV-orphan-numbers
+constant_copied_to_prose#030	constant_copied_to_prose	paper.md	163	0	0	0	0	contradicts the work until a person decides which of the two is wrong.	1	
+constant_copied_to_prose#031	constant_copied_to_prose	paper.md	163	0	0	0	0	contradicts the work until a person decides which of the two is wrong.	1	
+constant_copied_to_prose#032	constant_copied_to_prose	paper.md	163	0	0	0	0	contradicts the work until a person decides which of the two is wrong.	1	
+constant_copied_to_prose#033	constant_copied_to_prose	paper.md	163	1	0	0	1	contradicts the work until a person decides which of the two is wrong.	1	COV-orphan-numbers
+constant_copied_to_prose#034	constant_copied_to_prose	paper.md	163	1	0	0	1	contradicts the work until a person decides which of the two is wrong.	1	COV-orphan-numbers
+constant_copied_to_prose#035	constant_copied_to_prose	paper.md	163	1	0	0	1	contradicts the work until a person decides which of the two is wrong.	1	COV-orphan-numbers
 data_corrupted#000	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	11	    return decimals[:n]	0	CIT-agrees-a,DUAL-chi_square,DUAL-count_7,DUAL-count_8,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_7,FRZ-count_8,FRZ-p_value
 data_corrupted#001	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	    return decimals[:n]	0	DUAL-chi_square,DUAL-count_8,DUAL-count_9,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_8,FRZ-count_9,FRZ-p_value
 data_corrupted#002	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	18	    return decimals[:n]	0	DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-digits,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-matches-data,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-largest_count,FRZ-p_value,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z
@@ -65,18 +65,18 @@ data_corrupted#026	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	    retu
 data_corrupted#027	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	6	    return decimals[:n]	0	DUAL-count_2,DUAL-count_3,DUAL-digits,FIG-matches-data,FRZ-count_2,FRZ-count_3
 data_corrupted#028	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	10	    return decimals[:n]	0	DUAL-chi_square,DUAL-count_6,DUAL-count_7,DUAL-digits,DUAL-p_value,FIG-matches-data,FRZ-chi_square,FRZ-count_6,FRZ-count_7,FRZ-p_value
 data_corrupted#029	data_corrupted	src/data_path_a_spigot.py	38	1	0	1	18	    return decimals[:n]	0	DUAL-chi_square,DUAL-count_1,DUAL-count_2,DUAL-digits,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-matches-data,FRZ-chi_square,FRZ-count_1,FRZ-count_2,FRZ-largest_count,FRZ-p_value,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z
-data_truncated#000	data_truncated	src/data_path_a_spigot.py	38	1	0	1	96	    return decimals[:n]	0	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib-field,FM-author-README.md-byline,FM-author-paper.md-byline,FM-author-paper.md-yaml,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib-field,FM-title-README.md-heading,FM-title-paper.md-heading,FM-title-paper.md-yaml,FM-version-CITATION.bib-field,FM-version-README.md-byline,FM-version-paper.md-yaml,FM-year-CITATION.bib-field,FM-year-README.md-byline,FM-year-paper.md-yaml,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-a,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
-data_truncated#001	data_truncated	src/data_path_a_spigot.py	38	1	0	1	96	    return decimals[:n]	0	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib-field,FM-author-README.md-byline,FM-author-paper.md-byline,FM-author-paper.md-yaml,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib-field,FM-title-README.md-heading,FM-title-paper.md-heading,FM-title-paper.md-yaml,FM-version-CITATION.bib-field,FM-version-README.md-byline,FM-version-paper.md-yaml,FM-year-CITATION.bib-field,FM-year-README.md-byline,FM-year-paper.md-yaml,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-a,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
-data_truncated#002	data_truncated	src/data_path_b_machin.py	38	1	0	0	96	    return [int(c) for c in decimals[:n]]	0	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib-field,FM-author-README.md-byline,FM-author-paper.md-byline,FM-author-paper.md-yaml,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib-field,FM-title-README.md-heading,FM-title-paper.md-heading,FM-title-paper.md-yaml,FM-version-CITATION.bib-field,FM-version-README.md-byline,FM-version-paper.md-yaml,FM-year-CITATION.bib-field,FM-year-README.md-byline,FM-year-paper.md-yaml,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-b,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
-data_truncated#003	data_truncated	src/data_path_b_machin.py	38	1	0	0	96	    return [int(c) for c in decimals[:n]]	0	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib-field,FM-author-README.md-byline,FM-author-paper.md-byline,FM-author-paper.md-yaml,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib-field,FM-title-README.md-heading,FM-title-paper.md-heading,FM-title-paper.md-yaml,FM-version-CITATION.bib-field,FM-version-README.md-byline,FM-version-paper.md-yaml,FM-year-CITATION.bib-field,FM-year-README.md-byline,FM-year-paper.md-yaml,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-b,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
+data_truncated#000	data_truncated	src/data_path_a_spigot.py	38	1	0	1	91	    return decimals[:n]	0	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib,FM-author-README.md,FM-author-paper.md,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib,FM-title-README.md,FM-title-paper.md,FM-year-CITATION.bib,FM-year-README.md,FM-year-paper.md,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-a,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
+data_truncated#001	data_truncated	src/data_path_a_spigot.py	38	1	0	1	91	    return decimals[:n]	0	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib,FM-author-README.md,FM-author-paper.md,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib,FM-title-README.md,FM-title-paper.md,FM-year-CITATION.bib,FM-year-README.md,FM-year-paper.md,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-a,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
+data_truncated#002	data_truncated	src/data_path_b_machin.py	38	1	0	0	91	    return [int(c) for c in decimals[:n]]	0	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib,FM-author-README.md,FM-author-paper.md,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib,FM-title-README.md,FM-title-paper.md,FM-year-CITATION.bib,FM-year-README.md,FM-year-paper.md,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-b,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
+data_truncated#003	data_truncated	src/data_path_b_machin.py	38	1	0	0	91	    return [int(c) for c in decimals[:n]]	0	CIT-agrees-a,CIT-agrees-b,CIT-consumed-PI_FIRST_100_DECIMALS,CIT-identifier-PI_FIRST_100_DECIMALS,CIT-record-PI_FIRST_100_DECIMALS,CIT-single-source-of-truth,COV-orphan-numbers,COV-sections-exist,DUAL-chi_square,DUAL-count_0,DUAL-count_1,DUAL-count_2,DUAL-count_3,DUAL-count_4,DUAL-count_5,DUAL-count_6,DUAL-count_7,DUAL-count_8,DUAL-count_9,DUAL-degrees_of_freedom,DUAL-degrees_of_freedom_result,DUAL-digits,DUAL-erfc-range,DUAL-expected_count,DUAL-largest_count,DUAL-p_value,DUAL-post_hoc_p,DUAL-post_hoc_p_adjusted,DUAL-post_hoc_z,FIG-labels-counts,FIG-matches-data,FIG-present,FIG-referenced,FM-author-CITATION.bib,FM-author-README.md,FM-author-paper.md,FM-citation-key,FM-doi-policy,FM-title-CITATION.bib,FM-title-README.md,FM-title-paper.md,FM-year-CITATION.bib,FM-year-README.md,FM-year-paper.md,FRZ-alpha,FRZ-chi_square,FRZ-count_0,FRZ-count_1,FRZ-count_2,FRZ-count_3,FRZ-count_4,FRZ-count_5,FRZ-count_6,FRZ-count_7,FRZ-count_8,FRZ-count_9,FRZ-degrees_of_freedom,FRZ-degrees_of_freedom_result,FRZ-expected_count,FRZ-largest_count,FRZ-max_checks_killed,FRZ-min_checks_killed,FRZ-n_categories_null,FRZ-n_categories_q,FRZ-n_checks,FRZ-n_digits_data,FRZ-n_digits_limits,FRZ-n_digits_q,FRZ-n_mutants,FRZ-n_reference_digits,FRZ-p_value,FRZ-post_hoc_comparisons,FRZ-post_hoc_p,FRZ-post_hoc_p_adjusted,FRZ-post_hoc_z,INV-len-b,MAP-covers-checks,MAP-covers-paper,MAP-present,META-check-count,MUT-all-mutants-killed,MUT-report-parses,MUT-report-present,MUT-study-nonempty,PHR-CITATION.bib,PHR-README.md,PHR-list-nonempty,PHR-mutation_report.md,PHR-paper.md,PHR-references.bib,SPLIT-no-hardcoded-results
 derivation_written_by_hand#000	derivation_written_by_hand	src/stats_path_a_series.py	43	1	0	0	1	    return sum((observed - expected) ** 2 / expected for observed in counts)	0	SPLIT-no-hardcoded-results
 derivation_written_by_hand#001	derivation_written_by_hand	src/stats_path_b_exact.py	50	0	0	0	0	    return Fraction(N_CATEGORIES * sum_of_squares, n) - n	0	
 derivation_written_by_hand#002	derivation_written_by_hand	src/stats_path_a_series.py	66	1	0	0	1	    return 1.0 - lower	0	SPLIT-no-hardcoded-results
 derivation_written_by_hand#003	derivation_written_by_hand	src/stats_path_b_exact.py	68	1	0	0	1	    return tail	0	SPLIT-no-hardcoded-results
 derivation_written_by_hand#004	derivation_written_by_hand	src/stats_path_a_series.py	81	1	0	0	1	    return (observed - expected) / sd	0	SPLIT-no-hardcoded-results
 derivation_written_by_hand#005	derivation_written_by_hand	src/stats_path_a_series.py	91	1	0	0	1	    return min(1.0, p * n_tests)	0	SPLIT-no-hardcoded-results
-derivation_written_by_hand#006	derivation_written_by_hand	src/frozen_claims.py	207	0	0	0	0	    degrees_of_freedom = N_CATEGORIES - 1	0	
-derivation_written_by_hand#007	derivation_written_by_hand	src/frozen_claims.py	206	0	0	0	0	    expected = Fraction(n, N_CATEGORIES)	0	
+derivation_written_by_hand#006	derivation_written_by_hand	src/frozen_claims.py	174	0	0	0	0	    degrees_of_freedom = N_CATEGORIES - 1	0	
+derivation_written_by_hand#007	derivation_written_by_hand	src/frozen_claims.py	173	0	0	0	0	    expected = Fraction(n, N_CATEGORIES)	0	
 derivation_written_by_hand#008	derivation_written_by_hand	src/stats_path_a_series.py	33	1	0	0	1	    return counts	0	SPLIT-no-hardcoded-results
 derivation_written_by_hand#009	derivation_written_by_hand	src/stats_path_b_exact.py	35	1	0	0	1	    return [text.count(str(d)) for d in range(N_CATEGORIES)]	0	SPLIT-no-hardcoded-results
 figure_gone_stale#000	figure_gone_stale	figures/digit_frequencies.svg	5	1	0	1	1	0</text>	0	FIG-matches-data
@@ -114,44 +114,44 @@ figure_governing_number#004	figure_governing_number	src/figure.py	17	1	0	1	1	MAR
 figure_governing_number#005	figure_governing_number	src/figure.py	18	1	0	1	1	MARGIN_BOTTOM = 48	0	FIG-matches-data
 figure_governing_number#006	figure_governing_number	src/figure.py	22	1	0	1	1	Y_MAX = 130	0	FIG-matches-data
 figure_governing_number#007	figure_governing_number	src/figure.py	23	1	0	1	1	Y_TICK_STEP = 26	0	FIG-matches-data
-forbidden_phrase#000	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#001	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#002	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#003	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#004	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#005	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#006	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#007	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#008	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#009	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#010	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#011	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#012	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#013	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#014	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#015	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#016	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#017	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#018	forbidden_phrase	paper.md	176	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
-forbidden_phrase#019	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#020	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#021	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#022	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#023	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#024	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#025	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#026	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#027	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#028	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#029	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#030	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#031	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#032	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#033	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#034	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#035	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#036	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
-forbidden_phrase#037	forbidden_phrase	README.md	214	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#000	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#001	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#002	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#003	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#004	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#005	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#006	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#007	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#008	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#009	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#010	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#011	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#012	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#013	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#014	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#015	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#016	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#017	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#018	forbidden_phrase	paper.md	172	1	0	0	1	Available at https://oeis.org/A000796	1	PHR-paper.md
+forbidden_phrase#019	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#020	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#021	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#022	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#023	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#024	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#025	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#026	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#027	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#028	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#029	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#030	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#031	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#032	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#033	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#034	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#035	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#036	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
+forbidden_phrase#037	forbidden_phrase	README.md	196	1	0	0	1	Code under the MIT licence, text under CC BY 4.0. See `LICENSE`.	0	PHR-README.md
 forbidden_phrase#038	forbidden_phrase	CITATION.bib	21	1	0	0	1	}	0	PHR-CITATION.bib
 forbidden_phrase#039	forbidden_phrase	CITATION.bib	21	1	0	0	1	}	0	PHR-CITATION.bib
 forbidden_phrase#040	forbidden_phrase	CITATION.bib	21	1	0	0	1	}	0	PHR-CITATION.bib
@@ -171,125 +171,124 @@ forbidden_phrase#053	forbidden_phrase	CITATION.bib	21	1	0	0	1	}	0	PHR-CITATION.b
 forbidden_phrase#054	forbidden_phrase	CITATION.bib	21	1	0	0	1	}	0	PHR-CITATION.bib
 forbidden_phrase#055	forbidden_phrase	CITATION.bib	21	1	0	0	1	}	0	PHR-CITATION.bib
 forbidden_phrase#056	forbidden_phrase	CITATION.bib	21	1	0	0	1	}	0	PHR-CITATION.bib
-forbidden_phrase#057	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#058	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#059	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#060	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#061	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#062	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#063	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#064	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#065	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#066	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#067	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#068	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#069	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#070	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#071	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#072	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#073	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#074	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#075	forbidden_phrase	references.bib	32	1	0	0	1	}	0	PHR-references.bib
-forbidden_phrase#076	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#077	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#078	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#079	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#080	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#081	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#082	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#083	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#084	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#085	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#086	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#087	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#088	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#089	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#090	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#091	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#092	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#093	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-forbidden_phrase#094	forbidden_phrase	mutation_report.md	185	1	0	0	1		8844	PHR-mutation_report.md
-front_matter_drift#000	front_matter_drift	paper.md	2	1	0	0	1	: A Minimal Stasis Artifact	2	FM-title-paper.md-yaml
-front_matter_drift#001	front_matter_drift	paper.md	2	1	0	0	1	pi	13	FM-title-paper.md-yaml
-front_matter_drift#002	front_matter_drift	paper.md	8	1	0	0	1	: A Minimal Stasis Artifact	2	FM-title-paper.md-heading
-front_matter_drift#003	front_matter_drift	paper.md	8	1	0	0	1	pi	13	FM-title-paper.md-heading
-front_matter_drift#004	front_matter_drift	README.md	1	1	0	0	1	: A Minimal Stasis Artifact	2	FM-title-README.md-heading
-front_matter_drift#005	front_matter_drift	README.md	1	1	0	0	1	pi	13	FM-title-README.md-heading
-front_matter_drift#006	front_matter_drift	CITATION.bib	15	1	0	0	1	: A Minimal Stasis Artifact	2	FM-title-CITATION.bib-field
-front_matter_drift#007	front_matter_drift	CITATION.bib	15	1	0	0	1	pi	13	FM-title-CITATION.bib-field
-front_matter_drift#008	front_matter_drift	paper.md	3	1	0	0	1	í	2	FM-author-paper.md-yaml
-front_matter_drift#009	front_matter_drift	paper.md	3	1	0	0	1	 Hurtado	2	FM-author-paper.md-yaml
-front_matter_drift#010	front_matter_drift	paper.md	10	1	0	0	1	í	2	FM-author-paper.md-byline
-front_matter_drift#011	front_matter_drift	paper.md	10	1	0	0	1	 Hurtado	2	FM-author-paper.md-byline
-front_matter_drift#012	front_matter_drift	README.md	3	1	0	0	1	í	2	FM-author-README.md-byline
-front_matter_drift#013	front_matter_drift	README.md	3	1	0	0	1	 Hurtado	2	FM-author-README.md-byline
-front_matter_drift#014	front_matter_drift	CITATION.bib	16	1	0	0	1	í	2	FM-author-CITATION.bib-field
-front_matter_drift#015	front_matter_drift	CITATION.bib	16	1	0	0	1	 Hurtado	2	FM-author-CITATION.bib-field
-front_matter_drift#016	front_matter_drift	paper.md	4	1	0	0	1	2026	1	FM-year-paper.md-yaml
-front_matter_drift#017	front_matter_drift	README.md	3	1	0	0	1	2026	1	FM-year-README.md-byline
-front_matter_drift#018	front_matter_drift	README.md	83	0	0	0	0	2026	1	
-front_matter_drift#019	front_matter_drift	CITATION.bib	14	1	0	0	1	2026	1	FM-citation-key
-front_matter_drift#020	front_matter_drift	CITATION.bib	17	1	0	0	1	2026	1	FM-year-CITATION.bib-field
-frozen_value_edited#000	frozen_value_edited	src/frozen_claims.py	98	1	0	0	1	"1000", "%d"	0	FRZ-n_digits_q
-frozen_value_edited#001	frozen_value_edited	src/frozen_claims.py	100	1	0	0	1	"10", "%d"	0	FRZ-n_categories_q
-frozen_value_edited#002	frozen_value_edited	src/frozen_claims.py	104	1	0	0	1	"1000", "%d"	0	FRZ-n_digits_data
-frozen_value_edited#003	frozen_value_edited	src/frozen_claims.py	106	1	0	0	1	"100", "%d"	0	FRZ-n_reference_digits
-frozen_value_edited#004	frozen_value_edited	src/frozen_claims.py	110	1	0	0	1	"10", "%d"	0	FRZ-n_categories_null
-frozen_value_edited#005	frozen_value_edited	src/frozen_claims.py	115	1	0	0	1	"100", "%d"	0	FRZ-expected_count
-frozen_value_edited#006	frozen_value_edited	src/frozen_claims.py	118	1	0	0	1	"9", "%d"	0	FRZ-degrees_of_freedom
-frozen_value_edited#007	frozen_value_edited	src/frozen_claims.py	120	1	0	0	2	"0.05", "%.2f"	0	COV-orphan-numbers,FRZ-alpha
-frozen_value_edited#008	frozen_value_edited	src/frozen_claims.py	127	1	0	0	1	"93", "%d"	0	FRZ-count_0
-frozen_value_edited#009	frozen_value_edited	src/frozen_claims.py	128	1	0	0	2	"116", "%d"	0	FIG-labels-counts,FRZ-count_1
-frozen_value_edited#010	frozen_value_edited	src/frozen_claims.py	129	1	0	0	2	"103", "%d"	0	COV-orphan-numbers,FRZ-count_2
-frozen_value_edited#011	frozen_value_edited	src/frozen_claims.py	130	1	0	0	2	"102", "%d"	0	COV-orphan-numbers,FRZ-count_3
-frozen_value_edited#012	frozen_value_edited	src/frozen_claims.py	131	1	0	0	1	"93", "%d"	0	FRZ-count_4
-frozen_value_edited#013	frozen_value_edited	src/frozen_claims.py	132	1	0	0	2	"97", "%d"	0	COV-orphan-numbers,FRZ-count_5
-frozen_value_edited#014	frozen_value_edited	src/frozen_claims.py	133	1	0	0	2	"94", "%d"	0	COV-orphan-numbers,FRZ-count_6
-frozen_value_edited#015	frozen_value_edited	src/frozen_claims.py	134	1	0	0	3	"95", "%d"	0	COV-orphan-numbers,FIG-labels-counts,FRZ-count_7
-frozen_value_edited#016	frozen_value_edited	src/frozen_claims.py	135	1	0	0	2	"101", "%d"	0	COV-orphan-numbers,FRZ-count_8
-frozen_value_edited#017	frozen_value_edited	src/frozen_claims.py	136	1	0	0	3	"106", "%d"	0	COV-orphan-numbers,FIG-labels-counts,FRZ-count_9
-frozen_value_edited#018	frozen_value_edited	src/frozen_claims.py	137	1	0	0	2	"4.74", "%.2f"	0	COV-orphan-numbers,FRZ-chi_square
-frozen_value_edited#019	frozen_value_edited	src/frozen_claims.py	139	1	0	0	1	"9", "%d"	0	FRZ-degrees_of_freedom_result
-frozen_value_edited#020	frozen_value_edited	src/frozen_claims.py	141	1	0	0	2	"0.8564", "%.4f"	0	COV-orphan-numbers,FRZ-p_value
-frozen_value_edited#021	frozen_value_edited	src/frozen_claims.py	145	1	0	0	1	"116", "%d"	0	FRZ-largest_count
-frozen_value_edited#022	frozen_value_edited	src/frozen_claims.py	147	1	0	0	2	"1.6865", "%.4f"	0	COV-orphan-numbers,FRZ-post_hoc_z
-frozen_value_edited#023	frozen_value_edited	src/frozen_claims.py	149	1	0	0	2	"0.0917", "%.4f"	0	COV-orphan-numbers,FRZ-post_hoc_p
-frozen_value_edited#024	frozen_value_edited	src/frozen_claims.py	151	1	0	0	1	"10", "%d"	0	FRZ-post_hoc_comparisons
-frozen_value_edited#025	frozen_value_edited	src/frozen_claims.py	153	1	0	0	2	"0.917", "%.3f"	0	COV-orphan-numbers,FRZ-post_hoc_p_adjusted
-frozen_value_edited#026	frozen_value_edited	src/frozen_claims.py	157	1	0	0	1	"1000", "%d"	0	FRZ-n_digits_limits
-frozen_value_edited#027	frozen_value_edited	src/frozen_claims.py	161	1	0	0	3	"109", "%d"	0	COV-orphan-numbers,FRZ-n_checks,META-check-count
-frozen_value_edited#028	frozen_value_edited	src/frozen_claims.py	163	1	0	0	2	"17", "%d"	0	COV-orphan-numbers,FRZ-n_mutants
-frozen_value_edited#029	frozen_value_edited	src/frozen_claims.py	168	1	0	0	2	"1", "%d"	0	COV-orphan-numbers,FRZ-min_checks_killed
-frozen_value_edited#030	frozen_value_edited	src/frozen_claims.py	170	1	0	0	2	"35", "%d"	0	COV-orphan-numbers,FRZ-max_checks_killed
+forbidden_phrase#057	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#058	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#059	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#060	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#061	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#062	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#063	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#064	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#065	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#066	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#067	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#068	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#069	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#070	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#071	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#072	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#073	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#074	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#075	forbidden_phrase	references.bib	31	1	0	0	1	}	0	PHR-references.bib
+forbidden_phrase#076	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#077	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#078	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#079	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#080	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#081	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#082	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#083	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#084	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#085	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#086	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#087	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#088	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#089	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#090	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#091	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#092	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#093	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+forbidden_phrase#094	forbidden_phrase	mutation_report.md	140	1	0	0	1		8519	PHR-mutation_report.md
+front_matter_drift#000	front_matter_drift	paper.md	2	0	0	0	0	: A Minimal Stasis Artifact	2	
+front_matter_drift#001	front_matter_drift	paper.md	2	0	0	0	0	pi	13	
+front_matter_drift#002	front_matter_drift	paper.md	8	0	0	0	0	: A Minimal Stasis Artifact	2	
+front_matter_drift#003	front_matter_drift	paper.md	8	0	0	0	0	pi	13	
+front_matter_drift#004	front_matter_drift	README.md	1	1	0	0	1	: A Minimal Stasis Artifact	2	FM-title-README.md
+front_matter_drift#005	front_matter_drift	README.md	1	1	0	0	1	pi	13	FM-title-README.md
+front_matter_drift#006	front_matter_drift	CITATION.bib	15	1	0	0	1	: A Minimal Stasis Artifact	2	FM-title-CITATION.bib
+front_matter_drift#007	front_matter_drift	CITATION.bib	15	1	0	0	1	pi	13	FM-title-CITATION.bib
+front_matter_drift#008	front_matter_drift	paper.md	3	0	0	0	0	í	2	
+front_matter_drift#009	front_matter_drift	paper.md	3	0	0	0	0	 Hurtado	2	
+front_matter_drift#010	front_matter_drift	paper.md	10	0	0	0	0	í	2	
+front_matter_drift#011	front_matter_drift	paper.md	10	0	0	0	0	 Hurtado	2	
+front_matter_drift#012	front_matter_drift	README.md	3	1	0	0	1	í	2	FM-author-README.md
+front_matter_drift#013	front_matter_drift	README.md	3	1	0	0	1	 Hurtado	2	FM-author-README.md
+front_matter_drift#014	front_matter_drift	CITATION.bib	16	1	0	0	1	í	2	FM-author-CITATION.bib
+front_matter_drift#015	front_matter_drift	CITATION.bib	16	1	0	0	1	 Hurtado	2	FM-author-CITATION.bib
+front_matter_drift#016	front_matter_drift	paper.md	4	1	0	0	1	2026	1	FM-year-paper.md
+front_matter_drift#017	front_matter_drift	README.md	3	1	0	0	1	2026	1	FM-year-README.md
+front_matter_drift#018	front_matter_drift	CITATION.bib	14	1	0	0	1	2026	1	FM-citation-key
+front_matter_drift#019	front_matter_drift	CITATION.bib	17	0	0	0	0	2026	1	
+frozen_value_edited#000	frozen_value_edited	src/frozen_claims.py	75	1	0	0	1	"1000", "%d"	0	FRZ-n_digits_q
+frozen_value_edited#001	frozen_value_edited	src/frozen_claims.py	77	1	0	0	1	"10", "%d"	0	FRZ-n_categories_q
+frozen_value_edited#002	frozen_value_edited	src/frozen_claims.py	81	1	0	0	1	"1000", "%d"	0	FRZ-n_digits_data
+frozen_value_edited#003	frozen_value_edited	src/frozen_claims.py	83	1	0	0	1	"100", "%d"	0	FRZ-n_reference_digits
+frozen_value_edited#004	frozen_value_edited	src/frozen_claims.py	87	1	0	0	1	"10", "%d"	0	FRZ-n_categories_null
+frozen_value_edited#005	frozen_value_edited	src/frozen_claims.py	89	1	0	0	1	"100", "%d"	0	FRZ-expected_count
+frozen_value_edited#006	frozen_value_edited	src/frozen_claims.py	91	1	0	0	1	"9", "%d"	0	FRZ-degrees_of_freedom
+frozen_value_edited#007	frozen_value_edited	src/frozen_claims.py	93	1	0	0	2	"0.05", "%.2f"	0	COV-orphan-numbers,FRZ-alpha
+frozen_value_edited#008	frozen_value_edited	src/frozen_claims.py	97	1	0	0	1	"93", "%d"	0	FRZ-count_0
+frozen_value_edited#009	frozen_value_edited	src/frozen_claims.py	98	1	0	0	2	"116", "%d"	0	FIG-labels-counts,FRZ-count_1
+frozen_value_edited#010	frozen_value_edited	src/frozen_claims.py	99	1	0	0	2	"103", "%d"	0	COV-orphan-numbers,FRZ-count_2
+frozen_value_edited#011	frozen_value_edited	src/frozen_claims.py	100	1	0	0	2	"102", "%d"	0	COV-orphan-numbers,FRZ-count_3
+frozen_value_edited#012	frozen_value_edited	src/frozen_claims.py	101	1	0	0	1	"93", "%d"	0	FRZ-count_4
+frozen_value_edited#013	frozen_value_edited	src/frozen_claims.py	102	1	0	0	2	"97", "%d"	0	COV-orphan-numbers,FRZ-count_5
+frozen_value_edited#014	frozen_value_edited	src/frozen_claims.py	103	1	0	0	2	"94", "%d"	0	COV-orphan-numbers,FRZ-count_6
+frozen_value_edited#015	frozen_value_edited	src/frozen_claims.py	104	1	0	0	3	"95", "%d"	0	COV-orphan-numbers,FIG-labels-counts,FRZ-count_7
+frozen_value_edited#016	frozen_value_edited	src/frozen_claims.py	105	1	0	0	2	"101", "%d"	0	COV-orphan-numbers,FRZ-count_8
+frozen_value_edited#017	frozen_value_edited	src/frozen_claims.py	106	1	0	0	3	"106", "%d"	0	COV-orphan-numbers,FIG-labels-counts,FRZ-count_9
+frozen_value_edited#018	frozen_value_edited	src/frozen_claims.py	107	1	0	0	2	"4.74", "%.2f"	0	COV-orphan-numbers,FRZ-chi_square
+frozen_value_edited#019	frozen_value_edited	src/frozen_claims.py	109	1	0	0	1	"9", "%d"	0	FRZ-degrees_of_freedom_result
+frozen_value_edited#020	frozen_value_edited	src/frozen_claims.py	111	1	0	0	2	"0.8564", "%.4f"	0	COV-orphan-numbers,FRZ-p_value
+frozen_value_edited#021	frozen_value_edited	src/frozen_claims.py	113	1	0	0	1	"116", "%d"	0	FRZ-largest_count
+frozen_value_edited#022	frozen_value_edited	src/frozen_claims.py	115	1	0	0	2	"1.6865", "%.4f"	0	COV-orphan-numbers,FRZ-post_hoc_z
+frozen_value_edited#023	frozen_value_edited	src/frozen_claims.py	117	1	0	0	2	"0.0917", "%.4f"	0	COV-orphan-numbers,FRZ-post_hoc_p
+frozen_value_edited#024	frozen_value_edited	src/frozen_claims.py	119	1	0	0	1	"10", "%d"	0	FRZ-post_hoc_comparisons
+frozen_value_edited#025	frozen_value_edited	src/frozen_claims.py	121	1	0	0	2	"0.917", "%.3f"	0	COV-orphan-numbers,FRZ-post_hoc_p_adjusted
+frozen_value_edited#026	frozen_value_edited	src/frozen_claims.py	125	1	0	0	1	"1000", "%d"	0	FRZ-n_digits_limits
+frozen_value_edited#027	frozen_value_edited	src/frozen_claims.py	129	1	0	0	3	"104", "%d"	0	COV-orphan-numbers,FRZ-n_checks,META-check-count
+frozen_value_edited#028	frozen_value_edited	src/frozen_claims.py	131	1	0	0	2	"12", "%d"	0	COV-orphan-numbers,FRZ-n_mutants
+frozen_value_edited#029	frozen_value_edited	src/frozen_claims.py	135	1	0	0	2	"1", "%d"	0	COV-orphan-numbers,FRZ-min_checks_killed
+frozen_value_edited#030	frozen_value_edited	src/frozen_claims.py	137	1	0	0	2	"35", "%d"	0	COV-orphan-numbers,FRZ-max_checks_killed
 manuscript_number_edited#000	manuscript_number_edited	paper.md	22	1	0	0	2	1000	7	COV-orphan-numbers,FRZ-n_digits_q
 manuscript_number_edited#001	manuscript_number_edited	paper.md	23	1	0	0	2	10	19	COV-orphan-numbers,FRZ-n_categories_q
 manuscript_number_edited#002	manuscript_number_edited	paper.md	31	1	0	0	2	1000	7	COV-orphan-numbers,FRZ-n_digits_data
 manuscript_number_edited#003	manuscript_number_edited	paper.md	40	1	0	0	1	100	10	FRZ-n_reference_digits
 manuscript_number_edited#004	manuscript_number_edited	paper.md	55	1	0	0	2	10	19	COV-orphan-numbers,FRZ-n_categories_null
-manuscript_number_edited#005	manuscript_number_edited	paper.md	56	1	0	0	1	100	10	FRZ-expected_count
-manuscript_number_edited#006	manuscript_number_edited	paper.md	61	1	0	0	2	9	17	COV-orphan-numbers,FRZ-degrees_of_freedom
+manuscript_number_edited#005	manuscript_number_edited	paper.md	56	0	0	0	0	100	10	
+manuscript_number_edited#006	manuscript_number_edited	paper.md	61	1	0	0	2	9	16	COV-orphan-numbers,FRZ-degrees_of_freedom
 manuscript_number_edited#007	manuscript_number_edited	paper.md	63	1	0	0	2	0.05	2	COV-orphan-numbers,FRZ-alpha
-manuscript_number_edited#008	manuscript_number_edited	paper.md	77	1	0	0	1	93	2	FRZ-count_0
-manuscript_number_edited#009	manuscript_number_edited	paper.md	78	1	0	0	2	116	2	COV-orphan-numbers,FRZ-count_1
-manuscript_number_edited#010	manuscript_number_edited	paper.md	79	1	0	0	2	103	1	COV-orphan-numbers,FRZ-count_2
+manuscript_number_edited#008	manuscript_number_edited	paper.md	77	0	0	0	0	93	2	
+manuscript_number_edited#009	manuscript_number_edited	paper.md	78	1	0	0	1	116	2	COV-orphan-numbers
+manuscript_number_edited#010	manuscript_number_edited	paper.md	79	1	0	0	1	103	1	FRZ-count_2
 manuscript_number_edited#011	manuscript_number_edited	paper.md	80	1	0	0	1	102	2	FRZ-count_3
-manuscript_number_edited#012	manuscript_number_edited	paper.md	81	1	0	0	1	93	2	FRZ-count_4
+manuscript_number_edited#012	manuscript_number_edited	paper.md	81	0	0	0	0	93	2	
 manuscript_number_edited#013	manuscript_number_edited	paper.md	82	1	0	0	2	97	1	COV-orphan-numbers,FRZ-count_5
 manuscript_number_edited#014	manuscript_number_edited	paper.md	83	1	0	0	1	94	1	FRZ-count_6
 manuscript_number_edited#015	manuscript_number_edited	paper.md	84	1	0	0	2	95	3	COV-orphan-numbers,FRZ-count_7
 manuscript_number_edited#016	manuscript_number_edited	paper.md	85	1	0	0	1	101	1	FRZ-count_8
 manuscript_number_edited#017	manuscript_number_edited	paper.md	86	1	0	0	2	106	1	COV-orphan-numbers,FRZ-count_9
 manuscript_number_edited#018	manuscript_number_edited	paper.md	92	1	0	0	2	4.74	1	COV-orphan-numbers,FRZ-chi_square
-manuscript_number_edited#019	manuscript_number_edited	paper.md	92	1	0	0	2	9	17	COV-orphan-numbers,FRZ-degrees_of_freedom_result
+manuscript_number_edited#019	manuscript_number_edited	paper.md	92	1	0	0	2	9	16	COV-orphan-numbers,FRZ-degrees_of_freedom_result
 manuscript_number_edited#020	manuscript_number_edited	paper.md	93	1	0	0	2	0.8564	1	COV-orphan-numbers,FRZ-p_value
-manuscript_number_edited#021	manuscript_number_edited	paper.md	97	1	0	0	2	116	2	COV-orphan-numbers,FRZ-largest_count
+manuscript_number_edited#021	manuscript_number_edited	paper.md	97	1	0	0	1	116	2	COV-orphan-numbers
 manuscript_number_edited#022	manuscript_number_edited	paper.md	98	1	0	0	2	1.6865	1	COV-orphan-numbers,FRZ-post_hoc_z
 manuscript_number_edited#023	manuscript_number_edited	paper.md	99	1	0	0	2	0.0917	1	COV-orphan-numbers,FRZ-post_hoc_p
 manuscript_number_edited#024	manuscript_number_edited	paper.md	101	1	0	0	2	10	19	COV-orphan-numbers,FRZ-post_hoc_comparisons
 manuscript_number_edited#025	manuscript_number_edited	paper.md	101	1	0	0	2	0.917	1	COV-orphan-numbers,FRZ-post_hoc_p_adjusted
 manuscript_number_edited#026	manuscript_number_edited	paper.md	113	1	0	0	2	1000	7	COV-orphan-numbers,FRZ-n_digits_limits
-manuscript_number_edited#027	manuscript_number_edited	paper.md	127	1	0	0	1	109	1	FRZ-n_checks
-manuscript_number_edited#028	manuscript_number_edited	paper.md	147	1	0	0	2	17	3	COV-orphan-numbers,FRZ-n_mutants
+manuscript_number_edited#027	manuscript_number_edited	paper.md	127	1	0	0	2	104	1	COV-orphan-numbers,FRZ-n_checks
+manuscript_number_edited#028	manuscript_number_edited	paper.md	147	1	0	0	2	12	1	COV-orphan-numbers,FRZ-n_mutants
 manuscript_number_edited#029	manuscript_number_edited	paper.md	148	1	0	0	2	1	35	COV-orphan-numbers,FRZ-min_checks_killed
 manuscript_number_edited#030	manuscript_number_edited	paper.md	149	1	0	0	2	35	1	COV-orphan-numbers,FRZ-max_checks_killed
 nonnumeric_text_change#000	nonnumeric_text_change	src/cited_constants.py	22	0	0	0	0	#: The first 100 decimal digits of pi, as published, used as an external anchor	0	
@@ -298,20 +297,19 @@ nonnumeric_text_change#002	nonnumeric_text_change	src/data_path_b_machin.py	17	0
 nonnumeric_text_change#003	nonnumeric_text_change	src/figure.py	20	0	0	0	0	#: Top of the value axis. Fixed rather than derived from the data so that the	0	
 nonnumeric_text_change#004	nonnumeric_text_change	src/forbidden_phrases.py	21	0	0	0	0	#: Editing scars: markers that mean "not finished".	0	
 nonnumeric_text_change#005	nonnumeric_text_change	src/front_matter.py	12	0	0	0	0	#: The canonical title of this work. One string, reproduced character for	0	
-nonnumeric_text_change#006	nonnumeric_text_change	src/frozen_claims.py	47	0	0	0	0	#: A frozen claim.	0	
+nonnumeric_text_change#006	nonnumeric_text_change	src/frozen_claims.py	50	0	0	0	0	# --------------------------------------------------------------------------	0	
 nonnumeric_text_change#007	nonnumeric_text_change	src/manuscript.py	12	0	0	0	0	#: Package root, i.e. the directory containing paper.md.	0	
 nonnumeric_text_change#008	nonnumeric_text_change	src/stats_path_a_series.py	21	0	0	0	0	#: Number of possible decimal digits, i.e. the number of categories in the test.	0	
 nonnumeric_text_change#009	nonnumeric_text_change	src/stats_path_b_exact.py	23	0	0	0	0	#: Number of possible decimal digits, i.e. the number of categories in the test.	0	
 nonnumeric_text_change#010	nonnumeric_text_change	checks/check_10_structural_invariants.py	64	0	0	0	0	    # Invariants of the METHOD, not of the data: the two paths must really be two.	0	
 nonnumeric_text_change#011	nonnumeric_text_change	checks/check_20_cited_constants.py	26	0	0	0	0	#: An identifier a reader can actually resolve: a URL or a DOI.	0	
 nonnumeric_text_change#012	nonnumeric_text_change	checks/check_30_double_derivation.py	25	0	0	0	0	#: Absolute tolerance for agreement between the two paths on floating point	0	
-nonnumeric_text_change#013	nonnumeric_text_change	checks/check_40_frozen_numbers.py	77	0	0	0	0	        # The anchor is matched against the raw line, because stripping inline	0	
-nonnumeric_text_change#014	nonnumeric_text_change	checks/check_55_computed_not_hardcoded.py	30	0	0	0	0	#: The one module allowed to contain the frozen values.	0	
-nonnumeric_text_change#015	nonnumeric_text_change	checks/check_80_front_matter.py	36	0	0	0	0	#: Anything shaped like a DOI. Deliberately loose: it should over-match rather	0	
-nonnumeric_text_change#016	nonnumeric_text_change	checks/check_90_claim_map.py	20	0	0	0	0	#: The README heading that introduces the map.	0	
-nonnumeric_text_change#017	nonnumeric_text_change	paper.md	31	0	0	0	0	The data are computed, not downloaded.	1	
-nonnumeric_text_change#018	nonnumeric_text_change	README.md	25	0	0	0	0	That is the whole thing.	0	
-nonnumeric_text_change#019	nonnumeric_text_change	README.md	194	0	0	0	0	Finding out that something went stale is the point.	0	
+nonnumeric_text_change#013	nonnumeric_text_change	checks/check_55_computed_not_hardcoded.py	30	0	0	0	0	#: The one module allowed to contain the frozen values.	0	
+nonnumeric_text_change#014	nonnumeric_text_change	checks/check_80_front_matter.py	28	0	0	0	0	#: Anything shaped like a DOI. Deliberately loose: the point is to catch	0	
+nonnumeric_text_change#015	nonnumeric_text_change	checks/check_90_claim_map.py	20	0	0	0	0	#: The README heading that introduces the map.	0	
+nonnumeric_text_change#016	nonnumeric_text_change	paper.md	31	0	0	0	0	The data are computed, not downloaded.	1	
+nonnumeric_text_change#017	nonnumeric_text_change	README.md	25	0	0	0	0	That is the whole thing.	0	
+nonnumeric_text_change#018	nonnumeric_text_change	README.md	176	0	0	0	0	Finding out that something went stale is the point.	0	
 permutation_no_statistical_effect#000	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	2	    return decimals[:n]	0	CIT-agrees-a,DUAL-digits
 permutation_no_statistical_effect#001	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	2	    return decimals[:n]	0	CIT-agrees-a,DUAL-digits
 permutation_no_statistical_effect#002	permutation_no_statistical_effect	src/data_path_a_spigot.py	38	1	0	0	2	    return decimals[:n]	0	CIT-agrees-a,DUAL-digits
