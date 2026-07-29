@@ -110,12 +110,28 @@ that subject B's output is byte-identical across runs as subject A's is.
 A first attempt was started and then **deliberately stopped**, because the two
 columns added in R-1 below landed while it was running: it held the older code
 in memory and would have overwritten the regenerated file with the previous
-format on completion. It is being run again against the published code, so that
-what it confirms is what is published.
+format on completion. It was run again against the published code, so that what
+it confirms is what is published.
 
-Result recorded here when it lands. Until then, **subject B's byte-for-byte
-reproducibility is asserted by construction and not yet demonstrated**, which is
-a weaker claim than the one made for subject A.
+**Result: all three output files byte-identical.** 3475 s wall clock against
+B-1's 2874 s, different process scheduling, same bytes.
+
+```
+study_report_b.md   9e267256543e56c3f7baf2520b35bff680b37dd25f70196167eec24099c5dfc9
+raw_results_b.tsv   553fa55e2578423294ddd735da7aaebe2755bc3ef54ccc018619e13742aa47cf
+comparison.md       42a8fc1e91d80df940837ef796ea7fe4551deefb7b7d39f64aeb39a93a24f740
+```
+
+Subject B's byte-for-byte reproducibility is now **demonstrated rather than
+asserted**, which is the claim subject A already carried.
+
+**A second thing this run establishes, which was not what it was for.** B-2 was
+a full re-execution: it regenerated `raw_results_b.tsv` from scratch, including
+the two columns R-1 had added by rewriting. Its output matches the rewritten
+file exactly. So the rewrite did not merely preserve the columns it promised to
+preserve — the file it produced is the same file a fresh run produces, which is
+the stronger statement and the one that matters if anyone ever wonders whether a
+regenerated file and a measured one can be trusted equally here.
 
 ---
 
