@@ -81,9 +81,33 @@ def _first_line_containing(rel, needle, skip=0):
 # The 29 strings subject B requires to appear verbatim in paper.tex.
 # --------------------------------------------------------------------------
 def frozen_strings():
+    """The figures the subject requires to appear in its manuscript.
+
+    An instrument repair, not a change of design. The subject used to hold the
+    figures as a list literal named `frozen` inside `section_paper`; after being
+    fixed it holds them as a module-level tuple named `FROZEN_FIGURES`, pairing
+    each value with the positions it occupies. This function returns exactly what
+    it returned before -- the value strings, in declaration order -- and reads
+    whichever structure the subject in front of it actually has.
+
+    Both readers are kept on purpose. The study must remain able to reproduce
+    the measurement it published against the unrepaired subject; a generator
+    that could only read the new structure would silently lose the ability to
+    re-derive the "before" half of a before-and-after table.
+    """
     source = read(SCRIPT)
-    block = re.search(r"frozen = \[(.*?)\]", source, re.S).group(1)
-    return re.findall(r'"([^"]+)"', block)
+    tree = ast.parse(source)
+    for node in tree.body:
+        if (isinstance(node, ast.Assign) and len(node.targets) == 1
+                and isinstance(node.targets[0], ast.Name)
+                and node.targets[0].id == "FROZEN_FIGURES"):
+            return [value for value, _positions in ast.literal_eval(node.value)]
+    block = re.search(r"frozen = \[(.*?)\]", source, re.S)
+    if block:
+        return re.findall(r'"([^"]+)"', block.group(1))
+    raise RuntimeError(
+        "the subject declares its frozen figures in neither structure this "
+        "generator knows: no module-level FROZEN_FIGURES and no `frozen` list")
 
 
 def gen_manuscript_number_edited(battery):
