@@ -14,18 +14,77 @@ runs in its own temporary directory, and the results are keyed and then sorted
 before anything is aggregated.
 """
 
+import argparse
 import io
 import math
 import os
 import statistics
-import subprocess
 import sys
 import time
 from concurrent.futures import ProcessPoolExecutor
 
-import generate
-import oracles
+import subject as subject_module
 import taxonomy
+
+
+def _parse(argv):
+    parser = argparse.ArgumentParser(
+        description="Defect injection study of the Stasis apparatus.")
+    parser.add_argument("--subject", default=None, metavar="PATH",
+                        help="path to the subject package; overrides the "
+                             "STASIS_SUBJECT environment variable and the "
+                             "default sibling directory")
+    parser.add_argument("--force-commit-mismatch", action="store_true",
+                        help="run even though the subject is not at the declared "
+                             "commit, or its worktree is dirty; the report is "
+                             "stamped with what was actually found and marked "
+                             "as unpinned")
+    return parser.parse_args(argv)
+
+
+def _pin_or_exit(path, force):
+    """Verify the subject before anything else happens, and stop if it is wrong.
+
+    This runs at import time, ahead of `generate` and `oracles`, for two
+    reasons. Those modules settle on a subject path when they are imported, and
+    `generate` imports the subject's own source: pointing the study at something
+    that is not the subject would otherwise fail with an import error from deep
+    inside, instead of a sentence saying what is wrong.
+
+    Returns the pin record stamped into the report. Exits 2 if the study must
+    not run.
+    """
+    may_run, commit, worktree, complaint = subject_module.check(path, force)
+    if not may_run:
+        print("REFUSING TO RUN: %s" % complaint)
+        print("")
+        print("The rates this study publishes were measured against one commit of")
+        print("one package. Running the same battery against a different one and")
+        print("reporting it under the declared commit would be a report that lies")
+        print("about what it measured.")
+        print("")
+        print(subject_module.how_to_fix())
+        sys.exit(2)
+    if complaint:
+        print("WARNING: running unpinned because --force-commit-mismatch was given")
+        print("         %s" % complaint)
+    return dict(commit=commit, worktree=worktree,
+                declared=subject_module.DECLARED_COMMIT,
+                matches=(commit == subject_module.DECLARED_COMMIT
+                         and worktree == "clean"),
+                forced=bool(complaint), complaint=complaint)
+
+
+#: Resolved and verified before `generate` and `oracles` are imported. Exporting
+#: the path through the environment is what carries it to the worker processes,
+#: which are spawned rather than forked and so re-import those modules.
+ARGUMENTS = _parse(sys.argv[1:])
+SUBJECT_PATH = subject_module.resolve(ARGUMENTS.subject)
+subject_module.export(SUBJECT_PATH)
+PIN = _pin_or_exit(SUBJECT_PATH, ARGUMENTS.force_commit_mismatch)
+
+import generate                                                   # noqa: E402
+import oracles                                                    # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, "results")
@@ -47,10 +106,6 @@ def wilson(successes, total):
     return phat, max(0.0, centre - half), min(1.0, centre + half)
 
 
-def subject_commit():
-    done = subprocess.run(["git", "rev-parse", "HEAD"], cwd=oracles.SUBJECT,
-                          stdout=subprocess.PIPE, universal_newlines=True)
-    return done.stdout.strip() if done.returncode == 0 else "unknown"
 
 
 def detected_by_a(baseline_outcome, result):
@@ -75,6 +130,7 @@ def detected_by_a(baseline_outcome, result):
 
 def main():
     started = time.perf_counter()
+    pin = PIN
     battery = generate.build()
     mutants = battery.mutants
     print("battery: %d mutants, %d configurations" % (len(mutants), len(CONFIGS)))
@@ -145,22 +201,52 @@ def main():
                          b=bc.get("b"), c=bc.get("c"), ablation=ablation))
 
     write_raw(rows)
-    write_report(rows, battery, subject_commit(), integrity)
+    write_report(rows, battery, pin, integrity)
     print("elapsed: %.0f s" % (time.perf_counter() - started))
     return 0
+
+
+#: The manuscript whose text the `manuscript_occurrences` column counts against.
+MANUSCRIPT = "paper.md"
+
+
+def manuscript_occurrences(target):
+    """How many times a mutant's target string occurs in the subject's manuscript.
+
+    Published because the analysis used it and readers could not re-derive it.
+    A rate can be checked from the oracle columns alone, but the cross-tabulation
+    of "appears once" against "appears more than once" cannot, and that
+    cross-tabulation is the causal explanation of subject B's G1 breach.
+
+    Defined for every mutant, not only manuscript ones: for a mutant that edits
+    source code the count is usually zero, and saying zero is more useful than
+    leaving a blank that a reader has to interpret.
+    """
+    text = manuscript_occurrences.cache
+    if text is None:
+        with io.open(os.path.join(oracles.SUBJECT, MANUSCRIPT), encoding="utf-8") as fh:
+            text = fh.read()
+        manuscript_occurrences.cache = text
+    return text.count(target)
+
+
+manuscript_occurrences.cache = None
 
 
 def write_raw(rows):
     if not os.path.isdir(RESULTS):
         os.makedirs(RESULTS)
     out = ["\t".join(("mutant_id", "class", "path", "line", "oracle_a",
-                      "oracle_b", "oracle_c", "checks_killed", "killed_ids"))]
+                      "oracle_b", "oracle_c", "checks_killed",
+                      "target_string", "manuscript_occurrences", "killed_ids"))]
     for row in sorted(rows, key=lambda r: r["mutant"]["id"]):
         mutant = row["mutant"]
+        target = mutant["old"].replace("\t", " ").replace("\n", "\\n")
         out.append("\t".join((
             mutant["id"], mutant["cls"], mutant["path"], str(mutant["line"]),
             "1" if row["a"] else "0", "1" if row["b"] else "0",
             "1" if row["c"] else "0", str(len(row["dead"])),
+            target, str(manuscript_occurrences(mutant["old"])),
             ",".join(row["dead"]))))
     with io.open(os.path.join(RESULTS, "raw_results.tsv"), "w",
                  encoding="utf-8", newline="\n") as handle:
@@ -172,19 +258,30 @@ def _rate(label, successes, total):
     return "| %s | %d | %d | %.3f | %.3f - %.3f |" % (label, successes, total, phat, low, high)
 
 
-def write_report(rows, battery, commit, integrity):
+def write_report(rows, battery, pin, integrity):
     classes = sorted(set(row["mutant"]["cls"] for row in rows))
     lines = []
     add = lines.append
 
     add("# Defect injection study of the Stasis apparatus")
     add("")
+    if not pin["matches"]:
+        add("> **UNPINNED RUN. These numbers do not describe the declared subject.**")
+        add(">")
+        add("> This report was produced with `--force-commit-mismatch`, against a")
+        add("> subject that is not the one the study declares: %s." % pin["complaint"])
+        add("> Every rate below belongs to the commit stamped as")
+        add("> `SUBJECT_COMMIT_FOUND`, not to `SUBJECT_COMMIT_DECLARED`.")
+        add("")
     add("Generated by `run_study.py`. Every number below is produced by the run;")
     add("nothing is entered by hand. The predictions this is measured against were")
     add("committed in `PREREGISTRATION.md` before the battery was generated.")
     add("")
     add("```")
-    add("SUBJECT_COMMIT: %s" % commit)
+    add("SUBJECT_COMMIT_DECLARED: %s" % pin["declared"])
+    add("SUBJECT_COMMIT_FOUND: %s" % pin["commit"])
+    add("SUBJECT_WORKTREE: %s" % pin["worktree"])
+    add("SUBJECT_PINNED: %s" % ("yes" if pin["matches"] else "NO"))
     add("SEED: %d" % taxonomy.SEED)
     add("MUTANTS: %d" % len(rows))
     add("CLASSES: %d" % len(classes))

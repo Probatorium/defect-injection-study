@@ -7,15 +7,43 @@ copies of it by rule, and measures what each of three oracles catches.
 **Nothing here modifies the subject.** Every mutation is applied to a copy in a
 temporary directory that is deleted immediately afterwards.
 
-## Run it
+## Reproduce it in three steps
 
 ```
-python run_study.py
+git clone https://github.com/Probatorium/minimal-verified-paper.git
+git clone https://github.com/Probatorium/defect-injection-study.git
+cd minimal-verified-paper && git checkout e6e4250 && cd ../defect-injection-study && python run_study.py
 ```
 
-Python 3 standard library, no third-party packages, no network. About ten
-minutes on twelve cores: the battery is 363 mutants evaluated under nine
-configurations plus two baseline oracles, which is 3640 sandboxed runs.
+Clone the two repositories as siblings, put the subject at the commit this study
+declares, and run one command. Python 3 standard library, no third-party
+packages, no network. About ten minutes on twelve cores: 363 mutants evaluated
+under nine configurations plus two baseline oracles is 3640 sandboxed runs.
+
+## Where the subject is, and which commit it must be at
+
+The path is not fixed in the source. In order of precedence:
+
+```
+python run_study.py --subject /path/to/minimal-verified-paper
+STASIS_SUBJECT=/path/to/minimal-verified-paper python run_study.py
+python run_study.py            # default: ../minimal-verified-paper, a sibling clone
+```
+
+**The study refuses to run against the wrong subject.** Every rate it reports
+was measured against one commit of one package, declared as `DECLARED_COMMIT` in
+`subject.py`. If the subject is at a different commit, is not a git repository,
+or has uncommitted changes, the study stops and says so rather than producing a
+report that would read as though it had measured the declared state. A dirty
+worktree counts: the files on disk are then not the files that commit names.
+
+```
+python run_study.py --force-commit-mismatch
+```
+
+overrides the refusal. It hides nothing: the report is stamped with the commit
+actually found, `SUBJECT_PINNED` reads `NO`, and a warning block is prepended
+saying the numbers do not describe the declared subject.
 
 ```
 python generate.py     print the battery composition without running anything
@@ -63,6 +91,7 @@ derivation removes the comparison between the two paths, not the second path.
 ```
 PREREGISTRATION.md    predictions and refutation criteria, committed first
 taxonomy.py           the thirteen classes, the seed, the ablation map
+subject.py            where the subject is, and the commit it must be at
 generate.py           rule-based, seeded generation of the battery
 oracles.py            the three oracles and the sandbox they run in
 run_study.py          the single command
@@ -70,6 +99,11 @@ results/
   study_report.md     every rate, matrix and criterion verdict
   raw_results.tsv     one row per mutant, with the ids of every check that died
 ```
+
+`subject.py` is deliberately separate from `taxonomy.py`. That module was
+committed as part of the preregistration, and the preregistration is evidence
+about what was predicted before any data existed. Adding machinery to it
+afterwards would weaken that evidence for no gain.
 
 ## Reading the numbers
 
@@ -96,5 +130,8 @@ Work is spread across processes, which cannot affect the result: jobs are
 independent, each runs in its own directory, and results are keyed and sorted
 before anything is aggregated.
 
-The subject commit is recorded at the top of the report. A result measured
-against one commit says nothing about another.
+The subject commit is recorded at the top of the report, and the study refuses
+to run against any other unless explicitly forced. A result measured against one
+commit says nothing about another: if the blind spots this study found are ever
+fixed in the subject, these numbers stop describing it and the battery has to be
+re-run against the new commit.

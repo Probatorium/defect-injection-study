@@ -5,7 +5,10 @@ nothing is entered by hand. The predictions this is measured against were
 committed in `PREREGISTRATION.md` before the battery was generated.
 
 ```
-SUBJECT_COMMIT: e6e4250a18397976c5a266cb132707228fff5247
+SUBJECT_COMMIT_DECLARED: e6e4250a18397976c5a266cb132707228fff5247
+SUBJECT_COMMIT_FOUND: e6e4250a18397976c5a266cb132707228fff5247
+SUBJECT_WORKTREE: clean
+SUBJECT_PINNED: yes
 SEED: 20260728
 MUTANTS: 363
 CLASSES: 13
