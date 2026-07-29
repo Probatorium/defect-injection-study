@@ -13,7 +13,13 @@ import sys
 import tempfile
 
 import subject as subject_module
+import phase5
 import taxonomy
+
+#: The eight preregistered configurations, plus the one phase 5 adds. The
+#: preregistered eight are not modified; a new key cannot change an old one.
+ABLATIONS = dict(taxonomy.ABLATION_MODULES)
+ABLATIONS.update(phase5.EXTRA_ABLATION)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 #: Resolved once per process. Worker processes are spawned rather than forked,
@@ -118,7 +124,7 @@ def evaluate(job):
     """
     kind, mutant, config = job
     identifier = mutant["id"] if mutant else "BASELINE"
-    ablated = () if config == "full" else taxonomy.ABLATION_MODULES[config]
+    ablated = () if config == "full" else ABLATIONS[config]
     directory = tempfile.mkdtemp(prefix="dis_")
     try:
         sandbox = os.path.join(directory, "subject")

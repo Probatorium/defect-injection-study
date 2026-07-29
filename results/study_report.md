@@ -10,14 +10,15 @@ SUBJECT_COMMIT_FOUND: a3390860c53290271b6d06745fe252bfa7200dac
 SUBJECT_WORKTREE: clean
 SUBJECT_PINNED: yes
 SEED: 20260728
-MUTANTS: 365
-CLASSES: 13
-CONFIGURATIONS: 9
+MUTANTS: 411
+CLASSES: 15
+CONFIGURATIONS: 10
 SAMPLE_DATA_CORRUPTED: 30
 SAMPLE_PERMUTATION: 20
+SILENT_CANDIDATES_REJECTED: 0
 REJECTED_DUPLICATES: 0
 REJECTED_UNANCHORED: 0
-JOBS: 3660
+JOBS: 4532
 JOBS_ERRORED: 0
 JOBS_NOT_APPLICABLE: 7
 ```
@@ -47,7 +48,9 @@ modules.
 | `nonnumeric_text_change` | 20 | exhaustive |
 | `permutation_no_statistical_effect` | 20 | sampled |
 | `result_embedded_in_code` | 32 | exhaustive |
-| **total** | **365** | |
+| `silent_propagation` | 10 | exhaustive |
+| `unsupported_claim` | 36 | exhaustive |
+| **total** | **411** | |
 
 ## 2 · Detection rate by class and oracle
 
@@ -70,7 +73,9 @@ Wilson score intervals at 95%. `n` is the number of mutants in the class.
 | `nonnumeric_text_change` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `permutation_no_statistical_effect` | 20 | 20 | 1.000 | 0.839 - 1.000 |
 | `result_embedded_in_code` | 30 | 32 | 0.938 | 0.799 - 0.983 |
-| **all classes pooled** | 327 | 365 | 0.896 | 0.860 - 0.923 |
+| `silent_propagation` | 0 | 10 | 0.000 | 0.000 - 0.278 |
+| `unsupported_claim` | 36 | 36 | 1.000 | 0.904 - 1.000 |
+| **all classes pooled** | 363 | 411 | 0.883 | 0.849 - 0.911 |
 
 ### Oracle B · it builds
 
@@ -89,7 +94,9 @@ Wilson score intervals at 95%. `n` is the number of mutants in the class.
 | `nonnumeric_text_change` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `permutation_no_statistical_effect` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `result_embedded_in_code` | 0 | 32 | 0.000 | 0.000 - 0.107 |
-| **all classes pooled** | 0 | 365 | 0.000 | 0.000 - 0.010 |
+| `silent_propagation` | 0 | 10 | 0.000 | 0.000 - 0.278 |
+| `unsupported_claim` | 0 | 36 | 0.000 | 0.000 - 0.096 |
+| **all classes pooled** | 0 | 411 | 0.000 | 0.000 - 0.009 |
 
 ### Oracle C · figures regenerate and match
 
@@ -108,7 +115,9 @@ Wilson score intervals at 95%. `n` is the number of mutants in the class.
 | `nonnumeric_text_change` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `permutation_no_statistical_effect` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `result_embedded_in_code` | 0 | 32 | 0.000 | 0.000 - 0.107 |
-| **all classes pooled** | 67 | 365 | 0.184 | 0.147 - 0.227 |
+| `silent_propagation` | 0 | 10 | 0.000 | 0.000 - 0.278 |
+| `unsupported_claim` | 0 | 36 | 0.000 | 0.000 - 0.096 |
+| **all classes pooled** | 67 | 411 | 0.163 | 0.130 - 0.202 |
 
 ## 3 · Mechanism against class
 
@@ -131,6 +140,8 @@ columns, so rows do not sum to the class size.
 | `nonnumeric_text_change` | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `permutation_no_statistical_effect` | 20 | 0 | 0 | 20 | 0 | 0 | 0 | 3 | 0 | 0 |
 | `result_embedded_in_code` | 32 | 0 | 0 | 0 | 0 | 0 | 0 | 30 | 0 | 0 |
+| `silent_propagation` | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `unsupported_claim` | 36 | 36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 Legend: 1 frozen claims; 2 claim-to-check map; 3 double derivation; 4 mutation study; 5 structural invariants; 6 forbidden phrases; 7 cited vs computed; 8 front matter; 9 suite self-description
 
@@ -143,18 +154,19 @@ mechanism: its measured marginal contribution over this battery.
 
 | Mechanism | scored | detected without it | new escapes | share of scored |
 | --- | ---: | ---: | ---: | ---: |
-| 1 frozen claims | 364 | 206 | **121** | 0.332 |
-| 2 claim-to-check map | 364 | 327 | **0** | 0.000 |
-| 3 double derivation | 364 | 310 | **17** | 0.047 |
-| 4 mutation study | 365 | 327 | **0** | 0.000 |
-| 5 structural invariants | 364 | 327 | **0** | 0.000 |
-| 6 forbidden phrases | 365 | 232 | **95** | 0.260 |
-| 7 cited vs computed | 363 | 290 | **37** | 0.102 |
-| 8 front matter | 364 | 307 | **20** | 0.055 |
+| 1 frozen claims | 410 | 206 | **157** | 0.383 |
+| 2 claim-to-check map | 410 | 363 | **0** | 0.000 |
+| 3 double derivation | 410 | 346 | **17** | 0.041 |
+| 4 mutation study | 411 | 363 | **0** | 0.000 |
+| 5 structural invariants | 410 | 363 | **0** | 0.000 |
+| 6 forbidden phrases | 411 | 268 | **95** | 0.231 |
+| 7 cited vs computed | 409 | 326 | **37** | 0.090 |
+| 8 front matter | 410 | 343 | **20** | 0.049 |
+| 2b manuscript number coverage alone | 411 | 309 | **54** | 0.131 |
 
 Classes contributing the new escapes, per mechanism:
 
-- **1 frozen claims**: `constant_copied_to_prose` 24, `figure_gone_stale` 27, `figure_governing_number` 8, `frozen_value_edited` 31, `manuscript_number_edited` 31
+- **1 frozen claims**: `constant_copied_to_prose` 24, `figure_gone_stale` 27, `figure_governing_number` 8, `frozen_value_edited` 31, `manuscript_number_edited` 31, `unsupported_claim` 36
 - **2 claim-to-check map**: none
 - **3 double derivation**: `permutation_no_statistical_effect` 17
 - **4 mutation study**: none
@@ -162,16 +174,19 @@ Classes contributing the new escapes, per mechanism:
 - **6 forbidden phrases**: `forbidden_phrase` 95
 - **7 cited vs computed**: `derivation_written_by_hand` 7, `result_embedded_in_code` 30
 - **8 front matter**: `front_matter_drift` 20
+- **2b manuscript number coverage alone**: `constant_copied_to_prose` 18, `unsupported_claim` 36
 
 ## 5 · Escape rates, highest first
 
 | Class | escaped | n | escape rate | 95% Wilson |
 | --- | ---: | ---: | ---: | --- |
+| `silent_propagation` | 10 | 10 | 1.000 | 0.722 - 1.000 |
 | `nonnumeric_text_change` | 20 | 20 | 1.000 | 0.839 - 1.000 |
 | `constant_copied_to_prose` | 12 | 36 | 0.333 | 0.202 - 0.497 |
 | `derivation_written_by_hand` | 3 | 10 | 0.300 | 0.108 - 0.603 |
 | `result_embedded_in_code` | 2 | 32 | 0.062 | 0.017 - 0.201 |
 | `front_matter_drift` | 1 | 21 | 0.048 | 0.008 - 0.227 |
+| `unsupported_claim` | 0 | 36 | 0.000 | 0.000 - 0.096 |
 | `permutation_no_statistical_effect` | 0 | 20 | 0.000 | 0.000 - 0.161 |
 | `manuscript_number_edited` | 0 | 31 | 0.000 | 0.000 - 0.110 |
 | `frozen_value_edited` | 0 | 31 | 0.000 | 0.000 - 0.110 |
@@ -186,11 +201,32 @@ Classes contributing the new escapes, per mechanism:
 Evaluated mechanically against the thresholds fixed in `PREREGISTRATION.md`.
 
 - **F1** a class predicted detected escapes more than 0.10: **not met**
-- **harness** 0 of 3660 jobs errored; 7 were not applicable
-- **F2** a baseline reaches 0.90 of the full package: **not met** — oracle B 0/327 = 0.000, oracle C 67/327 = 0.205
+- **harness** 0 of 4532 jobs errored; 7 were not applicable
+- **F2** a baseline reaches 0.90 of the full package: **not met** — oracle B 0/363 = 0.000, oracle C 67/363 = 0.185
 - **F3** a mechanism shows zero new escapes when ablated: **MET** — 2 claim-to-check map, 4 mutation study, 5 structural invariants
 - **F4** the negative control is detected above 0.05: **not met** — 0.000
-- **F5** fewer than four classes exceed 0.90 detection: **not met** — 10 classes do
+- **F5** fewer than four classes exceed 0.90 detection: **not met** — 11 classes do
+
+## 6b · The gate, measured as position of failure rather than detection
+
+Mechanism 5 adds no detections; it decides where a run stops. For every
+mutant, how many checks actually executed under the unablated package and
+under the package with the structural invariants removed.
+
+| Checks that ran, with the gate | without it | Mutants | Classes |
+| ---: | ---: | ---: | --- |
+| 109 | 95 | 406 | `constant_copied_to_prose`, `data_corrupted`, `derivation_written_by_hand`, `figure_gone_stale` and 10 more |
+| 109 | not applicable | 1 | `nonnumeric_text_change` |
+| 14 | 0 | 4 | `data_truncated` |
+
+**Removing the gate does not move the failure later; it removes the
+failure report altogether.** For 4 mutants the unablated package stops
+after 14 checks and names the invariant that failed, while the same
+input without the gate produces no parseable check output at all: the
+run raises before any check reports. The gate's contribution is not
+that it catches something nothing else catches. It is that it converts
+an uncaught crash into a named structural failure, after a bounded
+number of checks.
 
 ## 7 · Per-mutant raw data
 

@@ -23,6 +23,7 @@ import sys
 import time
 from concurrent.futures import ProcessPoolExecutor
 
+import phase5
 import subject as subject_module
 import taxonomy
 
@@ -89,7 +90,7 @@ import oracles                                                    # noqa: E402
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(HERE, "results")
 
-CONFIGS = ("full",) + taxonomy.MECHANISMS
+CONFIGS = ("full",) + taxonomy.MECHANISMS + tuple(phase5.EXTRA_ABLATION)
 
 Z = statistics.NormalDist().inv_cdf(0.975)
 
@@ -193,12 +194,19 @@ def main():
                                             results[("A", mutant["id"], "full")])
         bc = results[("BC", mutant["id"], "full")]
         ablation = {}
-        for config in taxonomy.MECHANISMS:
+        for config in CONFIGS[1:]:
             ablated_detected, _ = detected_by_a(
                 baseline_a[config], results[("A", mutant["id"], config)])
             ablation[config] = ablated_detected
+        # results is keyed by (kind, mutant id, config); the gate measurement
+        # reads how many checks each run actually produced.
+        gate = results.get(("A", mutant["id"], "5 structural invariants"), {})
         rows.append(dict(mutant=mutant, a=full_detected, dead=dead,
-                         b=bc.get("b"), c=bc.get("c"), ablation=ablation))
+                         b=bc.get("b"), c=bc.get("c"), ablation=ablation,
+                         run_full=len(results[("A", mutant["id"], "full")].get("outcome", {})),
+                         run_nogate=(None if (gate.get("not_applicable")
+                                             or gate.get("error"))
+                                     else len(gate.get("outcome", {})))))
 
     write_raw(rows)
     write_report(rows, battery, pin, integrity)
@@ -238,7 +246,8 @@ def write_raw(rows):
         os.makedirs(RESULTS)
     out = ["\t".join(("mutant_id", "class", "path", "line", "oracle_a",
                       "oracle_b", "oracle_c", "checks_killed",
-                      "target_string", "manuscript_occurrences", "killed_ids"))]
+                      "target_string", "manuscript_occurrences",
+                      "checks_run", "killed_ids"))]
     for row in sorted(rows, key=lambda r: r["mutant"]["id"]):
         mutant = row["mutant"]
         target = mutant["old"].replace("\t", " ").replace("\n", "\\n")
@@ -247,7 +256,7 @@ def write_raw(rows):
             "1" if row["a"] else "0", "1" if row["b"] else "0",
             "1" if row["c"] else "0", str(len(row["dead"])),
             target, str(manuscript_occurrences(mutant["old"])),
-            ",".join(row["dead"]))))
+            str(row.get("run_full", 0)), ",".join(row["dead"]))))
     with io.open(os.path.join(RESULTS, "raw_results.tsv"), "w",
                  encoding="utf-8", newline="\n") as handle:
         handle.write("\n".join(out) + "\n")
@@ -288,6 +297,7 @@ def write_report(rows, battery, pin, integrity):
     add("CONFIGURATIONS: %d" % len(CONFIGS))
     add("SAMPLE_DATA_CORRUPTED: %d" % generate.SAMPLE_DATA_CORRUPTED)
     add("SAMPLE_PERMUTATION: %d" % generate.SAMPLE_PERMUTATION)
+    add("SILENT_CANDIDATES_REJECTED: %d" % len(generate.REJECTED_SILENT_CANDIDATES))
     add("REJECTED_DUPLICATES: %d" % battery.rejected_duplicates)
     add("REJECTED_UNANCHORED: %d" % battery.rejected_unanchored)
     add("JOBS: %d" % integrity["jobs"])
@@ -373,7 +383,7 @@ def write_report(rows, battery, pin, integrity):
     add("| Mechanism | scored | detected without it | new escapes | share of scored |")
     add("| --- | ---: | ---: | ---: | ---: |")
     ablation_summary = {}
-    for mechanism in taxonomy.MECHANISMS:
+    for mechanism in CONFIGS[1:]:
         scored = [row for row in rows if row["ablation"][mechanism] is not None
                   and row["a"] is not None]
         still = sum(1 for row in scored if row["ablation"][mechanism])
@@ -386,7 +396,7 @@ def write_report(rows, battery, pin, integrity):
     add("")
     add("Classes contributing the new escapes, per mechanism:")
     add("")
-    for mechanism in taxonomy.MECHANISMS:
+    for mechanism in CONFIGS[1:]:
         lost = {}
         for row in rows:
             if row["a"] and row["ablation"][mechanism] is False:
@@ -445,7 +455,7 @@ def write_report(rows, battery, pin, integrity):
         % ("MET" if max(ratio_b, ratio_c) >= 0.90 else "not met",
            b_hits, a_hits, ratio_b, c_hits, a_hits, ratio_c))
 
-    zero_contribution = [m for m in taxonomy.MECHANISMS if ablation_summary[m] == 0]
+    zero_contribution = [m for m in CONFIGS[1:] if ablation_summary[m] == 0]
     add("- **F3** a mechanism shows zero new escapes when ablated: **%s**%s"
         % ("MET" if zero_contribution else "not met",
            (" — " + ", ".join(zero_contribution)) if zero_contribution else ""))
@@ -464,6 +474,42 @@ def write_report(rows, battery, pin, integrity):
         % ("MET" if high < 4 else "not met", high))
     add("")
 
+    add("## 6b · The gate, measured as position of failure rather than detection")
+    add("")
+    add("Mechanism 5 adds no detections; it decides where a run stops. For every")
+    add("mutant, how many checks actually executed under the unablated package and")
+    add("under the package with the structural invariants removed.")
+    add("")
+    groups = {}
+    for r in rows:
+        groups.setdefault((r.get("run_full", 0), r.get("run_nogate", 0)), []).append(r)
+    add("| Checks that ran, with the gate | without it | Mutants | Classes |")
+    add("| ---: | ---: | ---: | --- |")
+    for key in sorted(groups, key=lambda k: (k[0], -1 if k[1] is None else k[1]),
+                      reverse=True):
+        members = groups[key]
+        classes = sorted(set(m["mutant"]["cls"] for m in members))
+        add("| %d | %s | %d | %s |"
+            % (key[0], "not applicable" if key[1] is None else key[1], len(members),
+               ", ".join("`%s`" % c for c in classes[:4])
+               + (" and %d more" % (len(classes) - 4) if len(classes) > 4 else "")))
+    add("")
+    # A pair whose target file the ablation deleted is not a crash: nothing ran
+    # because nothing could be injected. Those are excluded rather than counted
+    # as evidence for the gate, which would overstate it by one mutant.
+    crashed = [r for r in rows if r.get("run_nogate") == 0 and r.get("run_full", 0) > 0]
+    if crashed:
+        add("**Removing the gate does not move the failure later; it removes the")
+        add("failure report altogether.** For %d mutants the unablated package stops"
+            % len(crashed))
+        add("after %d checks and names the invariant that failed, while the same"
+            % crashed[0]["run_full"])
+        add("input without the gate produces no parseable check output at all: the")
+        add("run raises before any check reports. The gate's contribution is not")
+        add("that it catches something nothing else catches. It is that it converts")
+        add("an uncaught crash into a named structural failure, after a bounded")
+        add("number of checks.")
+        add("")
     add("## 7 · Per-mutant raw data")
     add("")
     add("`results/raw_results.tsv`, one row per mutant: class, target file and")

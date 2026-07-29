@@ -20,6 +20,7 @@ import random
 import re
 import sys
 
+import phase5
 import subject as subject_module
 import taxonomy
 
@@ -386,6 +387,114 @@ def gen_nonnumeric_text_change(battery):
                 break
 
 
+# --------------------------------------------------------------------------
+# Class 14: a real change to the computation that moves no published value.
+# --------------------------------------------------------------------------
+def _renders_identically(candidate):
+    """Apply a candidate to a throwaway copy and ask whether anything moved.
+
+    This is the filter that makes the class honest. A candidate is an instance
+    of `silent_propagation` only if, after it is applied, every frozen claim
+    still renders to exactly the string it rendered before. Whether an edit is
+    silent is therefore measured, not asserted by whoever wrote the list.
+
+    Returns (is_silent, what moved).
+    """
+    import shutil
+    import subprocess
+    import tempfile
+    _name, relative, old, new, _why = candidate
+    workspace = tempfile.mkdtemp(prefix="silent_")
+    try:
+        sandbox = os.path.join(workspace, "subject")
+        shutil.copytree(SUBJECT, sandbox,
+                        ignore=lambda _d, names: [n for n in names
+                                                  if n in ("__pycache__", ".git")])
+        path = os.path.join(sandbox, *relative.split("/"))
+        with io.open(path, encoding="utf-8") as handle:
+            text = handle.read()
+        if text.count(old) != 1:
+            return False, "the target text occurs %d times" % text.count(old)
+        with io.open(path, "w", encoding="utf-8", newline="\n") as handle:
+            handle.write(text.replace(old, new, 1))
+        probe = (
+            "import sys; sys.path.insert(0, '.')\n"
+            "from src import frozen_claims as f\n"
+            "d = f.digits_path_a(); va, _ = f.analyse_path_a(d)\n"
+            "e = f.digits_path_b(); vb, _ = f.analyse_path_b(e)\n"
+            "for c in f.CLAIMS:\n"
+            "    if c.kind != f.COMPUTED_DUAL: continue\n"
+            "    print(c.id, f.render(va[c.id], c.fmt), f.render(vb[c.id], c.fmt))\n")
+        done = subprocess.run([sys.executable, "-c", probe], cwd=sandbox,
+                              stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                              universal_newlines=True)
+        if done.returncode != 0:
+            return False, "the analysis no longer runs"
+        moved = []
+        for row in done.stdout.strip().split("\n"):
+            parts = row.split()
+            if len(parts) != 3:
+                continue
+            claim_id, rendered_a, rendered_b = parts
+            baseline = _BASELINE_RENDERS.get(claim_id)
+            if rendered_a != baseline or rendered_b != baseline:
+                moved.append(claim_id)
+        return (not moved), ", ".join(sorted(set(moved)))
+    finally:
+        import shutil as _s
+        _s.rmtree(workspace, ignore_errors=True)
+
+
+def _baseline_renders():
+    values, _counts = fc.analyse_path_a(fc.digits_path_a())
+    return {claim.id: fc.render(values[claim.id], claim.fmt)
+            for claim in fc.CLAIMS if claim.kind == fc.COMPUTED_DUAL}
+
+
+_BASELINE_RENDERS = {}
+
+#: Candidates rejected by the filter, with the reason, reported alongside the
+#: battery so that a rejection is visible rather than silently absent.
+REJECTED_SILENT_CANDIDATES = []
+
+
+def gen_silent_propagation(battery):
+    global _BASELINE_RENDERS
+    _BASELINE_RENDERS = _baseline_renders()
+    del REJECTED_SILENT_CANDIDATES[:]
+    for candidate in phase5.SILENT_PROPAGATION_CANDIDATES:
+        name, relative, old, new, _why = candidate
+        silent, moved = _renders_identically(candidate)
+        if not silent:
+            REJECTED_SILENT_CANDIDATES.append((name, moved))
+            continue
+        line = None
+        for number, row in enumerate(lines_of(relative), start=1):
+            if old in row:
+                line = number
+                break
+        battery.add("silent_propagation", relative, line, old, new)
+
+
+# --------------------------------------------------------------------------
+# Class 15: a sentence in the manuscript that no claim backs.
+# --------------------------------------------------------------------------
+def gen_unsupported_claim(battery):
+    rows = lines_of("paper.md")
+    for heading in MANUSCRIPT_SECTIONS:
+        first, last = section_line_range("paper.md", heading)
+        anchor = None
+        for number in range(last - 1, first - 1, -1):
+            if rows[number - 1].strip():
+                anchor = number
+                break
+        for value in phase5.UNSUPPORTED_VALUES:
+            row = rows[anchor - 1]
+            battery.add("unsupported_claim", "paper.md", anchor, row,
+                        row + "\n\nA further quantity of interest here is "
+                        + value + ", reported for completeness.")
+
+
 #: Declared sample sizes for the two classes that cannot be enumerated
 #: exhaustively without multiplying the battery by a thousand.
 SAMPLE_DATA_CORRUPTED = 30
@@ -408,6 +517,10 @@ def build():
     gen_data_truncated(battery)
     gen_permutation(battery, rng, SAMPLE_PERMUTATION)
     gen_nonnumeric_text_change(battery)
+    # Phase 5. Added last, and consuming no randomness, so that every sampled
+    # class above draws exactly what it drew in the runs already published.
+    gen_silent_propagation(battery)
+    gen_unsupported_claim(battery)
     return battery
 
 

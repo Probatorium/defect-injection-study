@@ -211,6 +211,41 @@ comparison.md       d431bb489000294262400315a97dd5bd2f1403d428b131ffc44165f7bb3b
 
 123 of 176 detected, against 72 of 176 before.
 
+### A-7 and A-8 · phase 5, two new classes and the gate measurement · **CURRENT for subject A**
+
+Subject A at a339086, unchanged. Seed 20260728, unchanged. The eight
+preregistered ablation configurations untouched; a ninth added in `phase5.py`,
+outside `taxonomy.py`, for the same reason subject pinning went into
+`subject.py`. Preregistration `bfd1cbc`. Two full runs, 777 s and 761 s,
+byte-identical.
+
+```
+study_report.md   338c5c7068073e6615c12e0c94d231629a8ca817af7675b1098c66a620de7e27
+raw_results.tsv   cdd9d9691b3ce33074df4ab050e4fb824e2435e59fa66efac2d3df1a08fa9d2f
+```
+
+Battery 411: the 365 of phase 3, identical class by class, plus 10
+`silent_propagation` and 36 `unsupported_claim`. 363 of 411 detected. The raw
+file gains a `checks_run` column, inserted before `killed_ids`, so columns 1 to
+10 keep their positions and `killed_ids` moves from 11 to 12.
+
+Two aggregation defects were found and fixed before anything was published, and
+both are recorded because both produced a wrong statement in a generated report:
+
+- the results dictionary is keyed by (kind, mutant id, configuration) and the
+  first version of the gate measurement indexed it with a two-element key. The
+  battery ran to completion, 4532 jobs in 831 s, and the run then died in
+  aggregation. No measurement was affected; the compute was lost.
+- the first corrected version counted five mutants as crashing without the gate.
+  Four crash. The fifth is a negative-control mutant that edits a comment inside
+  `check_10_structural_invariants.py`, and the configuration that ablates
+  mechanism 5 deletes that file, so the defect cannot be injected at all. Such
+  pairs are not applicable, not crashes, and counting it overstated the
+  mechanism by one mutant.
+
+`raw_results.tsv` carries the same hash across all four phase 5 runs, before and
+after both fixes. Only the report moved.
+
 ### Which hash belongs to which apparatus
 
 Two files carry the same name at four different hashes across this record. The
@@ -220,10 +255,12 @@ table exists so that a hash quoted in any commit message stays resolvable.
 | --- | --- | --- |
 | `raw_results.tsv` | A before, pre-columns | `8dce80ad4815…` |
 | `raw_results.tsv` | A before, with columns | `a30204f07570…` |
-| `raw_results.tsv` | **A after** | `7b644b3899dd…` |
+| `raw_results.tsv` | A after, phase 3 | `7b644b3899dd…` |
+| `raw_results.tsv` | **A after, phase 5** | `cdd9d9691b3c…` |
 | `study_report.md` | A before, pre-pinning | `ee0b4c8f4b8e…` |
 | `study_report.md` | A before, pinned | `fed635dacf1a…` |
-| `study_report.md` | **A after** | `1a3b77fcfd27…` |
+| `study_report.md` | A after, phase 3 | `1a3b77fcfd27…` |
+| `study_report.md` | **A after, phase 5** | `338c5c706807…` |
 | `raw_results_b.tsv` | B before, pre-columns | `c1e749616633…` |
 | `raw_results_b.tsv` | B before, with columns | `553fa55e2578…` |
 | `raw_results_b.tsv` | **B after** | `aef2dac90e44…` |
