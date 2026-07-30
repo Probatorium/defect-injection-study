@@ -58,7 +58,7 @@ declares, then one command:
 ```
 git clone https://github.com/Probatorium/minimal-verified-paper.git
 git clone https://github.com/Probatorium/defect-injection-study.git
-cd minimal-verified-paper && git checkout a339086
+cd minimal-verified-paper && git checkout 2ae7cdd
 cd ../defect-injection-study && python run_study.py
 ```
 
@@ -127,7 +127,7 @@ says which is primary, which lets the codechecker choose. If the answer is two
 issues, split it and keep `defect-injection-study` first: it is the one carrying
 the finding that needs an independent hand.
 
-**2. The subject commit.** The issue pins `a339086`. **Verify that is still the
+**2. The subject commit.** The issue pins `2ae7cdd`. **Verify that is still the
 commit the study declares** before sending: `DECLARED_COMMIT` in `subject.py` is
 the authority, and if the two disagree the codechecker hits the refusal on their
 first run, which is a bad first impression of a mechanism that is working
@@ -160,7 +160,7 @@ advertencia se cumplio.
 | | |
 |---|---|
 | lo que declara `subject.py` | `a3390860c53290271b6d06745fe252bfa7200dac` |
-| lo que mandaba hacer el README | `git checkout e6e4250` |
+| lo que mandaba hacer el README | checkout de `e6e4250` |
 
 **Un codechecker siguiendo el README habria chocado con el rechazo del estudio en
 su primer intento**, y habria concluido que el paquete no corre, cuando lo que

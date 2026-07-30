@@ -36,7 +36,7 @@ ENV_VAR = "STASIS_SUBJECT"
 
 #: The commit of the subject package that this study's published numbers were
 #: measured against. Update it only together with a full re-run.
-DECLARED_COMMIT = "a3390860c53290271b6d06745fe252bfa7200dac"
+DECLARED_COMMIT = "2ae7cddfefd4931f66c116fc177bbb2f78f24c44"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
