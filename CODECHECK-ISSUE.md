@@ -17,10 +17,10 @@ CODECHECK request: defect injection study of the Stasis apparatus (+ its subject
 
 Two small, self-contained repositories that are meant to be read together.
 
-- **Primary: `defect-injection-study`** — the measuring instrument. It injects
+- **Primary: `defect-injection-study`**, the measuring instrument. It injects
   defects by rule into throwaway copies of its subject and measures what each of
   three oracles catches. Every empirical rate in the paper comes from here.
-- **Secondary: `minimal-verified-paper`** — the subject. A two-page statistical
+- **Secondary: `minimal-verified-paper`**, the subject. A two-page statistical
   analysis whose every published number is checked against a fresh computation.
 
 Repositories:
@@ -67,11 +67,16 @@ against a dirty worktree, and says so rather than proceeding. That is
 deliberate: a measurement that silently drifts onto a different subject is worse
 than one that stops.
 
-**Secondary.**
+**Secondary.** Note the difference in what is checked out. The study needs the
+subject pinned at the commit it declares; the subject's own check runs on its
+current head, because `codecheck_run.py` was added after that commit.
 
 ```
-cd minimal-verified-paper && python codecheck_run.py
+cd minimal-verified-paper && git checkout main && python codecheck_run.py
 ```
+
+That asymmetry is deliberate and worth one line: the pin exists so the STUDY
+cannot silently measure a different subject, not to freeze the subject itself.
 
 ### The manifest, and one thing worth flagging
 
