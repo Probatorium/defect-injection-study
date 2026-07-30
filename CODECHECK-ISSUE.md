@@ -58,7 +58,7 @@ declares, then one command:
 ```
 git clone https://github.com/Probatorium/minimal-verified-paper.git
 git clone https://github.com/Probatorium/defect-injection-study.git
-cd minimal-verified-paper && git checkout e6e4250
+cd minimal-verified-paper && git checkout a339086
 cd ../defect-injection-study && python run_study.py
 ```
 
@@ -122,7 +122,7 @@ says which is primary, which lets the codechecker choose. If the answer is two
 issues, split it and keep `defect-injection-study` first: it is the one carrying
 the finding that needs an independent hand.
 
-**2. The subject commit.** The issue pins `e6e4250`. **Verify that is still the
+**2. The subject commit.** The issue pins `a339086`. **Verify that is still the
 commit the study declares** before sending: `DECLARED_COMMIT` in `subject.py` is
 the authority, and if the two disagree the codechecker hits the refusal on their
 first run, which is a bad first impression of a mechanism that is working
@@ -144,3 +144,31 @@ changed.
 So the repository that documents the class of the harvested figure is the one
 that cannot be codechecked. That is not a defect in CODECHECK and not a defect in
 the survey: it is the distinction both are about. Worth a sentence in the paper.
+
+---
+
+## Anexo: el segundo punto ya se comprobo, y estaba mal
+
+Al escribir esta nota se comprobo la advertencia en vez de dejarla escrita, y la
+advertencia se cumplio.
+
+| | |
+|---|---|
+| lo que declara `subject.py` | `a3390860c53290271b6d06745fe252bfa7200dac` |
+| lo que mandaba hacer el README | `git checkout e6e4250` |
+
+**Un codechecker siguiendo el README habria chocado con el rechazo del estudio en
+su primer intento**, y habria concluido que el paquete no corre, cuando lo que
+estaba fallando era la instruccion y no el mecanismo. El mecanismo, de hecho,
+estaba haciendo exactamente su trabajo: negarse a medir un sujeto distinto del
+declarado.
+
+Es envejecimiento silencioso en un artefacto ya publicado. El README fue correcto
+el dia que se escribio; el sujeto avanzo despues y **nada obligaba a la
+instruccion a avanzar con el**. Ninguna comprobacion del paquete miraba su propio
+README.
+
+Corregido en los dos ficheros. Y queda una tarea que este hallazgo hace obvia:
+**una comprobacion que compare el commit citado en el README con
+`DECLARED_COMMIT`**, para que la instruccion no pueda volver a envejecer sola.
+Va a la tanda 09.

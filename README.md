@@ -12,7 +12,7 @@ temporary directory that is deleted immediately afterwards.
 ```
 git clone https://github.com/Probatorium/minimal-verified-paper.git
 git clone https://github.com/Probatorium/defect-injection-study.git
-cd minimal-verified-paper && git checkout e6e4250 && cd ../defect-injection-study && python run_study.py
+cd minimal-verified-paper && git checkout a339086 && cd ../defect-injection-study && python run_study.py
 ```
 
 Clone the two repositories as siblings, put the subject at the commit this study
