@@ -1,0 +1,48 @@
+---
+version: https://codecheck.org.uk/spec/config/1.0/
+
+manifest:
+  - file: results/study_report.md
+    comment: >
+      Subject A. Detection rates per defect class and per oracle, with Wilson
+      score intervals, and the ablation. Every rate in the paper comes from
+      here. This file is written by run_study.py; the study is a measuring
+      instrument and its outputs are files by design, unlike the subject it
+      measures.
+  - file: results/raw_results.tsv
+    comment: >
+      Subject A, one row per mutant: class, target file, which oracles fired,
+      and whether the mutant was killed or survived. The report is derived from
+      this table, so a codechecker can recompute every published rate from it
+      without rerunning the study.
+  - file: results/study_report_b.md
+    comment: >
+      Subject B, the independent replication on a second, larger subject.
+  - file: results/raw_results_b.tsv
+    comment: Subject B, one row per mutant.
+  - file: results/comparison.md
+    comment: >
+      The two subjects side by side, with the Newcombe hybrid score interval for
+      the difference between rates.
+
+paper:
+  title: >
+    Freezing Published Numbers: a defect injection study of the Stasis apparatus
+  authors:
+    - name: Alexis Garcia Hurtado
+  reference: https://github.com/Probatorium/defect-injection-study
+
+codechecker:
+  - name:
+
+summary: >
+  Two repositories, cloned as siblings, then one command. The study injects
+  defects by rule into throwaway copies of its subject and measures what each
+  oracle catches. Python 3 standard library, no third-party packages, no
+  network, about ten minutes on twelve cores. The subject is pinned to a
+  declared commit and the study refuses to run against any other, or against a
+  dirty worktree, so the measurement cannot silently drift onto a different
+  subject. Every prediction was preregistered in this repository before its
+  data existed, and the predictions that failed are reported as failed.
+
+repository: https://github.com/Probatorium/defect-injection-study
