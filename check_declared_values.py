@@ -66,6 +66,15 @@ SUPERFICIES = (
 #: pinned commit. The pinned tree must contain them.
 EXIGIDOS_EN_EL_SUJETO = ("codecheck_run.py", "verify.py", "mutate.py")
 
+#: Numbers stated in prose that are ALSO computed into the report from the
+#: evidence. Same duplication as the commit, in a different costume, and found
+#: the same way: by looking rather than by trusting.
+#: (label, regex over README.md, key in results/study_report.md)
+CIFRAS = (
+    ("mutants", r"([0-9][0-9,]*) mutants evaluated", "MUTANTS"),
+    ("sandboxed runs", r"is ([0-9][0-9,]*) sandboxed runs", "JOBS"),
+)
+
 #: Historical records of what was measured. NEVER synchronised: updating them
 #: would falsify the record. Declared so the exclusion is visible.
 HISTORICAS = (
@@ -151,6 +160,41 @@ def main():
                               "advance DECLARED_COMMIT to a commit that contains "
                               "it, and re-run the study against that commit"
                               % (autoridad[:12], rel))
+
+    print("")
+    informe = os.path.join(AQUI, "results", "study_report.md")
+    if not os.path.exists(informe):
+        fallos.append("results/study_report.md does not exist, so the numbers "
+                      "stated in the README are tied to nothing. REMEDY: run "
+                      "`python run_study.py`")
+    else:
+        texto = io.open(informe, encoding="utf-8").read()
+        readme = io.open(os.path.join(AQUI, "README.md"), encoding="utf-8").read()
+        print("  numbers stated in prose AND computed from the evidence:")
+        for etiqueta, patron, clave in CIFRAS:
+            m = re.search(patron, readme)
+            r = re.search(r"^%s:\s*([0-9]+)\s*$" % re.escape(clave), texto, re.M)
+            dicho = m.group(1).replace(",", "") if m else None
+            medido = r.group(1) if r else None
+            estado = ("agrees" if dicho == medido
+                      else "DISAGREES" if (dicho and medido) else "MISSING")
+            print("    %-16s README %-8s report %-8s %s"
+                  % (etiqueta, dicho or "absent", medido or "absent", estado))
+            if dicho is None:
+                fallos.append("the README no longer states the number of %s. A "
+                              "surface that stops carrying the value must fail. "
+                              "REMEDY: restore the sentence, or drop the entry from "
+                              "CIFRAS deliberately" % etiqueta)
+            elif medido is None:
+                fallos.append("results/study_report.md does not report %s, so the "
+                              "README's number is tied to nothing. REMEDY: check "
+                              "that run_study.py still emits %s" % (clave, clave))
+            elif dicho != medido:
+                fallos.append("the README says %s %s and the report computed from "
+                              "the evidence says %s. A codechecker reads the README "
+                              "first and would meet this on their first run. "
+                              "REMEDY: change the README to %s, never the report"
+                              % (etiqueta, dicho, medido, medido))
 
     print("")
     print("  historical surfaces, NOT synchronised, declared so the exclusion is visible:")

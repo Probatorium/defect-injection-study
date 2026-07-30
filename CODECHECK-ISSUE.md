@@ -177,3 +177,43 @@ Corregido en los dos ficheros. Y queda una tarea que este hallazgo hace obvia:
 **una comprobacion que compare el commit citado en el README con
 `DECLARED_COMMIT`**, para que la instruccion no pueda volver a envejecer sola.
 Va a la tanda 09.
+
+---
+
+## Anexo 2: la refijacion, medida en vez de supuesta, y un segundo valor duplicado
+
+### La refijacion no rompio nada, y eso se midio
+
+Mover el pin cambia el sujeto que el estudio declara haber medido, asi que el
+estudio se **volvio a correr entero** en vez de razonar que las cifras
+aguantarian.
+
+| Fichero | Resultado |
+|---|---|
+| `results/raw_results.tsv` | **byte a byte identico** |
+| `results/study_report.md` | difiere **solo en las dos lineas del commit** |
+
+Los 411 mutantes, sus oraculos y sus muertes son los mismos. `SUBJECT_COMMIT_DECLARED`
+y `SUBJECT_COMMIT_FOUND` son lo unico que cambia, que es exactamente lo que tiene
+que cambiar.
+
+**Una salvedad sobre el metodo, porque estuve a punto de equivocarme.** La primera
+comparacion dio "identico" cuando el estudio **todavia no habia reescrito los
+ficheros**. La comparacion era trivialmente cierta. Lo que la salvo fue mirar la
+marca de tiempo antes de creerla: una comparacion entre dos cosas que no han
+cambiado no dice nada, y se parece mucho a una que si dice algo.
+
+### Y al mirar el log aparecio un segundo valor duplicado sin atar
+
+| | |
+|---|---:|
+| lo que el README publicaba | **363** mutantes, **3640** ejecuciones |
+| lo que el informe computa desde la evidencia | **411** mutantes, **4532** ejecuciones |
+
+**Un codechecker lo habria encontrado en su primera corrida**, y con razon: es
+justo lo que un codecheck existe para sacar a la luz. Misma clase que el commit,
+distinto disfraz, y encontrado de la misma manera, mirando en vez de fiarse.
+
+El README esta corregido, **nunca el informe**, y las dos cifras estan ahora
+atadas por `check_declared_values.py`, que las compara contra el informe generado
+desde la evidencia. Tres mutantes mas, tres cazados.

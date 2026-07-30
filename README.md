@@ -17,8 +17,11 @@ cd minimal-verified-paper && git checkout 2ae7cdd && cd ../defect-injection-stud
 
 Clone the two repositories as siblings, put the subject at the commit this study
 declares, and run one command. Python 3 standard library, no third-party
-packages, no network. About ten minutes on twelve cores: 363 mutants evaluated
-under nine configurations plus two baseline oracles is 3640 sandboxed runs.
+packages, no network. About fourteen minutes on twelve cores: 411 mutants evaluated
+under nine configurations plus two baseline oracles is 4532 sandboxed runs.
+Those two numbers are not written by hand: check_declared_values.py compares
+them against the report the study generates from its own evidence, and fails if
+they drift. They already had.
 
 ## Where the subject is, and which commit it must be at
 

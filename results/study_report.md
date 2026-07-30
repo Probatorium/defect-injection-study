@@ -5,8 +5,8 @@ nothing is entered by hand. The predictions this is measured against were
 committed in `PREREGISTRATION.md` before the battery was generated.
 
 ```
-SUBJECT_COMMIT_DECLARED: a3390860c53290271b6d06745fe252bfa7200dac
-SUBJECT_COMMIT_FOUND: a3390860c53290271b6d06745fe252bfa7200dac
+SUBJECT_COMMIT_DECLARED: 2ae7cddfefd4931f66c116fc177bbb2f78f24c44
+SUBJECT_COMMIT_FOUND: 2ae7cddfefd4931f66c116fc177bbb2f78f24c44
 SUBJECT_WORKTREE: clean
 SUBJECT_PINNED: yes
 SEED: 20260728
